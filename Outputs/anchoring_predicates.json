@@ -1,0 +1,80 @@
+{
+    "0": {
+        "sub": "AI system",
+        "obj": "input data",
+        "iri": "https://w3id.org/airo#hasInput",
+        "justification": "The 'receives' predicate, when an AI system is the subject and input data is the object, directly corresponds to the AI system having that input data, making 'airo:hasInput' an equivalent property."
+    },
+    "1": {
+        "sub": "AI system",
+        "obj": "risks to health, safety, or fundamental rights",
+        "iri": "https://w3id.org/airo#hasRisk",
+        "justification": "The 'poses' predicate indicates that an AI system brings forth or is associated with risks, which is semantically equivalent to the AI system 'having risk'."
+    },
+    "2": {
+        "sub": "High-risk AI system",
+        "obj": "instructions for use",
+        "iri": "https://w3id.org/airo#hasDocumentation",
+        "justification": "The 'accompaniedBy' predicate, in the context of an AI system and instructions for use, means the system comes with or has this documentation, which is directly equivalent to 'airo:hasDocumentation'."
+    },
+    "3": {
+        "sub": "AI system",
+        "obj": "risk to health, safety, or fundamental rights",
+        "iri": "https://w3id.org/airo#hasRisk",
+        "justification": "The predicate 'can be understood to present a risk' is semantically equivalent to the AI system 'having risk'."
+    },
+    "4": {
+        "sub": "AI system",
+        "obj": "content constituting a deep fake",
+        "iri": "https://w3id.org/airo#producesOutput",
+        "justification": "The 'generates' predicate, when an AI system is the subject and content is the object, directly corresponds to the AI system 'producing output'."
+    },
+    "5": {
+        "sub": "AI system",
+        "obj": "training data",
+        "iri": "https://w3id.org/airo#hasTrainingData",
+        "justification": "The 'trainedWith' predicate indicates that an AI system utilizes training data, which aligns with the AI system 'having training data'."
+    },
+    "6": {
+        "sub": "AI system",
+        "obj": "validation data",
+        "iri": "https://w3id.org/airo#hasValidationData",
+        "justification": "The 'evaluatedWith' predicate, in the context of AI systems and validation data, means the system uses this data for evaluation, aligning with the AI system 'having validation data'."
+    },
+    "7": {
+        "sub": "AI system",
+        "obj": "testing data",
+        "iri": "https://w3id.org/airo#hasTestingData",
+        "justification": "The 'evaluatedWith' predicate, in the context of AI systems and testing data, means the system uses this data for evaluation, aligning with the AI system 'having testing data'."
+    },
+    "8": {
+        "sub": "General-purpose AI model",
+        "obj": "systemic risk",
+        "iri": "https://w3id.org/airo#hasRisk",
+        "justification": "Being 'classified as having systemic risk' is semantically equivalent to the general-purpose AI model 'having risk'."
+    },
+    "9": {
+        "sub": "General-purpose AI model",
+        "obj": "high-impact capabilities",
+        "iri": "https://w3id.org/airo#hasCapability",
+        "justification": "The 'possesses' predicate indicates that an AI model has certain capabilities, which is directly equivalent to the model 'having capability'."
+    },
+    "10": {
+        "sub": "National competent authority",
+        "obj": "notifying authority",
+        "iri": "https://schema.org/hasPart",
+        "justification": "The 'includes' predicate here describes a part-whole relationship, where a notifying authority is a constituent part of a national competent authority, directly mapping to 'schema:hasPart'."
+    },
+    "11": {
+        "sub": "AI system",
+        "obj": "risks to health, safety, or fundamental rights",
+        "iri": "https://w3id.org/airo#hasRisk",
+        "justification": "The 'presents' predicate, when an AI system is the subject and risks are the object, is semantically equivalent to the AI system 'having risk'."
+    },
+    "12": {
+        "sub": "AI regulatory sandbox",
+        "obj": "testing in real-world conditions",
+        "iri": "https://schema.org/hasPart",
+        "justification": "The 'mayInclude' predicate, in the context of an AI regulatory sandbox and testing, indicates that testing is a potential component or part of the sandbox, aligning with 'schema:hasPart'."
+    }
+}

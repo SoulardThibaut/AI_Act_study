@@ -1,0 +1,23 @@
+deployer	operator	The definition of 'operator' explicitly includes 'deployer' as one of its types.
+Deemed_Provider	provider	The definition of 'Deemed Provider' states that such a party 'assumes the full obligations of a provider under this Regulation'.
+post-remote_biometric_identification_system	remote_biometric_identification_system	The definition of 'post-remote biometric identification system' explicitly states it 'means a remote biometric identification system other than a real-time remote biometric identification system'.
+notifying_authority	national_competent_authority	The definition of 'national competent authority' explicitly includes 'notifying authority' as one of its types.
+Public_Service_Deployer	deployer	The definition of 'Public Service Deployer' describes it as a 'specific functional role for a deployer'.
+remote_biometric_identification_system	AI_system	The definition of 'remote biometric identification system' explicitly states it 'means an AI system for the purpose of identifying natural persons, without their active involvement, typically at a distance'.
+Real-World_Testing_Consent_Subject	informed_consent	The definition of 'Real-World Testing Consent (Subject)' describes it as 'The legally required, freely given, specific, unambiguous, and voluntary expression of willingness by a natural person to participate in the testing of an AI system in real-world conditions, after being fully informed of all relevant aspects.' This is a specific form of 'informed consent'.
+importer	operator	The definition of 'operator' explicitly includes 'importer' as one of its types.
+Synthetic_Content_AI_System	AI_system	The definition of 'Synthetic Content AI System' describes it as 'A type of AI system that generates or manipulates audio, image, video, or text content'.
+notified_body	conformity_assessment_body	The definition of 'notified body' explicitly states it 'means a conformity assessment body notified in accordance with this Regulation'.
+distributor	operator	The definition of 'operator' explicitly includes 'distributor' as one of its types.
+AI_regulatory_sandbox	AI_Regulatory_Sandbox_Framework	The definition of 'AI regulatory sandbox' describes it as 'a controlled framework set up by a competent authority', which aligns with the concept of an 'AI Regulatory Sandbox Framework'.
+authorised_representative	operator	The definition of 'operator' explicitly includes 'authorised representative' as one of its types.
+special_categories_of_personal_data	personal_data	The definition of 'special categories of personal data' explicitly states it 'means the categories of personal data referred to in Article 9(1) of Regulation (EU) 2016/679'.
+provider	operator	The definition of 'operator' explicitly includes 'provider' as one of its types.
+market_surveillance_authority	national_competent_authority	The definition of 'national competent authority' explicitly includes 'market surveillance authority' as one of its types.
+biometric_data	personal_data	The definition of 'biometric data' explicitly states it 'means personal data resulting from specific technical processing relating to the physical, physiological or behavioural characteristics of a natural person'.
+general-purpose_AI_system	AI_system	The definition of 'general-purpose AI system' explicitly states it 'means an AI system which is based on a general-purpose AI model and which has the capability to serve a variety of purposes'.
+emotion_recognition_system	AI_system	The definition of 'emotion recognition system' explicitly states it 'means an AI system for the purpose of identifying or inferring emotions or intentions'.
+systemic_risk	risk	The definition of 'systemic risk' explicitly states it 'means a risk that is specific to the high-impact capabilities of general-purpose AI models'.
+biometric_categorisation_system	AI_system	The definition of 'biometric categorisation system' explicitly states it 'means an AI system for the purpose of assigning natural persons to specific categories'.
+Systemic_Risk_General-Purpose_AI_Model	general-purpose_AI_model	The definition of 'Systemic Risk General-Purpose AI Model' describes it as 'A classification for a general-purpose AI model that meets specific criteria'.
+real-time_remote_biometric_identification_system	remote_biometric_identification_system	The definition of 'real-time remote biometric identification system' explicitly states it 'means a remote biometric identification system, whereby the capturing of biometric data, the comparison and the identification all occur without a significant delay'.

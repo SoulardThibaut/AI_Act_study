@@ -1,0 +1,1500 @@
+@prefix : <http://example.org/eu-ai-act#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix airo: <https://w3id.org/airo#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@prefix prov: <https://www.w3.org/TR/prov-o/> .
+@prefix schema: <http://schema.org/> .
+
+#################################################################
+# Classes description
+#################################################################
+
+:AI_system rdf:type owl:Class;
+	 rdfs:label "AI system"@en;
+	 rdfs:comment " means amachine-based system that is designed to operate with varying levels of autonomy and that may exhibit adaptiveness after deployment, and that, for explicit or implicit objectives, infers, from the input it receives, how to generate outputs such as predictions, content, recommendations, or decisions that can influence physical or virtual environments;"@en;
+	 prov:wasAttributedTo 'document'.
+
+:risk rdf:type owl:Class;
+	 rdfs:label "risk"@en;
+	 rdfs:comment " means the combination of the probability of an occurrence of harm and the severity of that harm;"@en;
+	 prov:wasAttributedTo 'document'.
+
+:provider rdf:type owl:Class;
+	 rdfs:label "provider"@en;
+	 rdfs:comment " means anatural or legal person, public authority, agency or other body that develops an AI system or ageneral-purpose AI model or that has an AI system or ageneral-purpose AI model developed and places it on the market or puts the AI system into service under its own name or trademark, whether for payment or free of charge;"@en;
+	 prov:wasAttributedTo 'document'.
+
+:deployer rdf:type owl:Class;
+	 rdfs:label "deployer"@en;
+	 rdfs:comment " means anatural or legal person, public authority, agency or other body using an AI system under its authority except where the AI system is used in the course of apersonal non-professional activity;"@en;
+	 prov:wasAttributedTo 'document'.
+
+:authorised_representative rdf:type owl:Class;
+	 rdfs:label "authorised representative"@en;
+	 rdfs:comment " means anatural or legal person located or established in the Union who has received and accepted awritten mandate from aprovider of an AI system or ageneral-purpose AI model to, respectively, perform and carry out on its behalf the obligations and procedures established by this Regulation;"@en;
+	 prov:wasAttributedTo 'document'.
+
+:importer rdf:type owl:Class;
+	 rdfs:label "importer"@en;
+	 rdfs:comment " means anatural or legal person located or established in the Union that places on the market an AI system that bears the name or trademark of anatural or legal person established in athird country;"@en;
+	 prov:wasAttributedTo 'document'.
+
+:distributor rdf:type owl:Class;
+	 rdfs:label "distributor"@en;
+	 rdfs:comment " means anatural or legal person in the supply chain, other than the provider or the importer, that makes an AI system available on the Union market;"@en;
+	 prov:wasAttributedTo 'document'.
+
+:operator rdf:type owl:Class;
+	 rdfs:label "operator"@en;
+	 rdfs:comment " means aprovider, product manufacturer, deployer, authorised representative, importer or distributor;"@en;
+	 prov:wasAttributedTo 'document'.
+
+:placing_on_the_market rdf:type owl:Class;
+	 rdfs:label "placing on the market"@en;
+	 rdfs:comment " means the first making available of an AI system or ageneral-purpose AI model on the Union market;"@en;
+	 prov:wasAttributedTo 'document'.
+
+:making_available_on_the_market rdf:type owl:Class;
+	 rdfs:label "making available on the market"@en;
+	 rdfs:comment " means the supply of an AI system or ageneral-purpose AI model for distribution or use on the Union market in the course of acommercial activity, whether in return for payment or free of charge;"@en;
+	 prov:wasAttributedTo 'document'.
+
+:putting_into_service rdf:type owl:Class;
+	 rdfs:label "putting into service"@en;
+	 rdfs:comment " means the supply of an AI system for first use directly to the deployer or for own use in the Union for its intended purpose;"@en;
+	 prov:wasAttributedTo 'document'.
+
+:intended_purpose rdf:type owl:Class;
+	 rdfs:label "intended purpose"@en;
+	 rdfs:comment " means the use for which an AI system is intended by the provider, including the specific context and conditions of use, as specified in the information supplied by the provider in the instructions for use, promotional or sales materials and statements, as well as in the technical documentation;"@en;
+	 prov:wasAttributedTo 'document'.
+
+:reasonably_foreseeable_misuse rdf:type owl:Class;
+	 rdfs:label "reasonably foreseeable misuse"@en;
+	 rdfs:comment " means the use of an AI system in away that is not in accordance with its intended purpose, but which may result from reasonably foreseeable human behaviour or interaction with other systems, including other AI systems;"@en;
+	 prov:wasAttributedTo 'document'.
+
+:safety_component rdf:type owl:Class;
+	 rdfs:label "safety component"@en;
+	 rdfs:comment " means acomponent of aproduct or of an AI system which fulfils asafety function for that product or AI system, or the failure or malfunctioning of which endangers the health and safety of persons or property;"@en;
+	 prov:wasAttributedTo 'document'.
+
+:instructions_for_use rdf:type owl:Class;
+	 rdfs:label "instructions for use"@en;
+	 rdfs:comment " means the information provided by the provider to inform the deployer of, in particular, an AI system’s intended purpose and proper use;"@en;
+	 prov:wasAttributedTo 'document'.
+
+:recall_of_an_AI_system rdf:type owl:Class;
+	 rdfs:label "recall of an AI system"@en;
+	 rdfs:comment " means any measure aiming to achieve the return to the provider or taking out of service or disabling the use of an AI system made available to deployers;"@en;
+	 prov:wasAttributedTo 'document'.
+
+:withdrawal_of_an_AI_system rdf:type owl:Class;
+	 rdfs:label "withdrawal of an AI system"@en;
+	 rdfs:comment " means any measure aiming to prevent an AI system in the supply chain being made available on the market;"@en;
+	 prov:wasAttributedTo 'document'.
+
+:performance_of_an_AI_system rdf:type owl:Class;
+	 rdfs:label "performance of an AI system"@en;
+	 rdfs:comment " means the ability of an AI system to achieve its intended purpose;"@en;
+	 prov:wasAttributedTo 'document'.
+
+:notifying_authority rdf:type owl:Class;
+	 rdfs:label "notifying authority"@en;
+	 rdfs:comment " means the national authority responsible for setting up and carrying out the necessary procedures for the assessment, designation and notification of conformity assessment bodies and for their monitoring;"@en;
+	 prov:wasAttributedTo 'document'.
+
+:conformity_assessment rdf:type owl:Class;
+	 rdfs:label "conformity assessment"@en;
+	 rdfs:comment " means the process of demonstrating whether the requirements set out in ChapterIII, Section2 relating to ahigh-risk AI system have been fulfilled;"@en;
+	 prov:wasAttributedTo 'document'.
+
+:conformity_assessment_body rdf:type owl:Class;
+	 rdfs:label "conformity assessment body"@en;
+	 rdfs:comment " means abody that performs third-party conformity assessment activities, including testing, certification and inspection;"@en;
+	 prov:wasAttributedTo 'document'.
+
+:notified_body rdf:type owl:Class;
+	 rdfs:label "notified body"@en;
+	 rdfs:comment " means aconformity assessment body notified in accordance with this Regulation and other relevant Union harmonisation legislation;"@en;
+	 prov:wasAttributedTo 'document'.
+
+:substantial_modification rdf:type owl:Class;
+	 rdfs:label "substantial modification"@en;
+	 rdfs:comment " means achange to an AI system after its placing on the market or putting into service which is not foreseen or planned in the initial conformity assessment carried out by the provider and as aresult of which the compliance of the AI system with the requirements set out in ChapterIII, Section2 is affected or results in amodification to the intended purpose for which the AI system has been assessed;"@en;
+	 prov:wasAttributedTo 'document'.
+
+:CE_marking rdf:type owl:Class;
+	 rdfs:label "CE marking"@en;
+	 rdfs:comment " means amarking by which aprovider indicates that an AI system is in conformity with the requirements set out in ChapterIII, Section2 and other applicable Union harmonisation legislation providing for its affixing;"@en;
+	 prov:wasAttributedTo 'document'.
+
+:post-market_monitoring_system rdf:type owl:Class;
+	 rdfs:label "post-market monitoring system"@en;
+	 rdfs:comment " means all activities carried out by providers of AI systems to collect and review experience gained from the use of AI systems they place on the market or put into service for the purpose of identifying any need to immediately apply any necessary corrective or preventive actions;"@en;
+	 prov:wasAttributedTo 'document'.
+
+:market_surveillance_authority rdf:type owl:Class;
+	 rdfs:label "market surveillance authority"@en;
+	 rdfs:comment " means the national authority carrying out the activities and taking the measures pursuant to Regulation (EU) 2019/1020;"@en;
+	 prov:wasAttributedTo 'document'.
+
+:harmonised_standard rdf:type owl:Class;
+	 rdfs:label "harmonised standard"@en;
+	 rdfs:comment " means aharmonised standard as defined in Article2(1), point (c), of Regulation (EU) No1025/2012;"@en;
+	 prov:wasAttributedTo 'document'.
+
+:common_specification rdf:type owl:Class;
+	 rdfs:label "common specification"@en;
+	 rdfs:comment " means aset of technical specifications as defined in Article2, point (4) of Regulation (EU) No1025/2012, providing means to comply with certain requirements established under this Regulation;"@en;
+	 prov:wasAttributedTo 'document'.
+
+:training_data rdf:type owl:Class;
+	 rdfs:label "training data"@en;
+	 rdfs:comment " means data used for training an AI system through fitting its learnable parameters;"@en;
+	 prov:wasAttributedTo 'document'.
+
+:validation_data rdf:type owl:Class;
+	 rdfs:label "validation data"@en;
+	 rdfs:comment " means data used for providing an evaluation of the trained AI system and for tuning its non-learnable parameters and its learning process in order, inter alia, to prevent underfitting or overfitting;"@en;
+	 prov:wasAttributedTo 'document'.
+
+:validation_data_set rdf:type owl:Class;
+	 rdfs:label "validation data set"@en;
+	 rdfs:comment " means aseparate data set or part of the training data set, either as afixed or variable split;"@en;
+	 prov:wasAttributedTo 'document'.
+
+:testing_data rdf:type owl:Class;
+	 rdfs:label "testing data"@en;
+	 rdfs:comment " means data used for providing an independent evaluation of the AI system in order to confirm the expected performance of that system before its placing on the market or putting into service;"@en;
+	 prov:wasAttributedTo 'document'.
+
+:input_data rdf:type owl:Class;
+	 rdfs:label "input data"@en;
+	 rdfs:comment " means data provided to or directly acquired by an AI system on the basis of which the system produces an output;"@en;
+	 prov:wasAttributedTo 'document'.
+
+:biometric_data rdf:type owl:Class;
+	 rdfs:label "biometric data"@en;
+	 rdfs:comment " means personal data resulting from specific technical processing relating to the physical, physiological or behavioural characteristics of anatural person, such as facial images or dactyloscopic data;"@en;
+	 prov:wasAttributedTo 'document'.
+
+:biometric_identification rdf:type owl:Class;
+	 rdfs:label "biometric identification"@en;
+	 rdfs:comment " means the automated recognition of physical, physiological, behavioural, or psychological human features for the purpose of establishing the identity of anatural person by comparing biometric data of that individual to biometric data of individuals stored in adatabase;"@en;
+	 prov:wasAttributedTo 'document'.
+
+:biometric_verification rdf:type owl:Class;
+	 rdfs:label "biometric verification"@en;
+	 rdfs:comment " means the automated, one-to-one verification, including authentication, of the identity of natural persons by comparing their biometric data to previously provided biometric data;"@en;
+	 prov:wasAttributedTo 'document'.
+
+:special_categories_of_personal_data rdf:type owl:Class;
+	 rdfs:label "special categories of personal data"@en;
+	 rdfs:comment " means the categories of personal data referred to in Article9(1) of Regulation (EU) 2016/679, Article10 of Directive (EU) 2016/680 and Article10(1) of Regulation (EU) 2018/1725;"@en;
+	 prov:wasAttributedTo 'document'.
+
+:sensitive_operational_data rdf:type owl:Class;
+	 rdfs:label "sensitive operational data"@en;
+	 rdfs:comment " means operational data related to activities of prevention, detection, investigation or prosecution of criminal offences, the disclosure of which could jeopardise the integrity of criminal proceedings;"@en;
+	 prov:wasAttributedTo 'document'.
+
+:emotion_recognition_system rdf:type owl:Class;
+	 rdfs:label "emotion recognition system"@en;
+	 rdfs:comment " means an AI system for the purpose of identifying or inferring emotions or intentions of natural persons on the basis of their biometric data;"@en;
+	 prov:wasAttributedTo 'document'.
+
+:biometric_categorisation_system rdf:type owl:Class;
+	 rdfs:label "biometric categorisation system"@en;
+	 rdfs:comment " means an AI system for the purpose of assigning natural persons to specific categories on the basis of their biometric data, unless it is ancillary to another commercial service and strictly necessary for objective technical reasons;"@en;
+	 prov:wasAttributedTo 'document'.
+
+:remote_biometric_identification_system rdf:type owl:Class;
+	 rdfs:label "remote biometric identification system"@en;
+	 rdfs:comment " means an AI system for the purpose of identifying natural persons, without their active involvement, typically at adistance through the comparison of aperson’s biometric data with the biometric data contained in areference database;"@en;
+	 prov:wasAttributedTo 'document'.
+
+:real-time_remote_biometric_identification_system rdf:type owl:Class;
+	 rdfs:label "real-time remote biometric identification system"@en;
+	 rdfs:comment " means aremote biometric identification system, whereby the capturing of biometric data, the comparison and the identification all occur without asignificant delay, comprising not only instant identification, but also limited short delays in order to avoid circumvention;"@en;
+	 prov:wasAttributedTo 'document'.
+
+:post-remote_biometric_identification_system rdf:type owl:Class;
+	 rdfs:label "post-remote biometric identification system"@en;
+	 rdfs:comment " means aremote biometric identification system other than areal-time remote biometric identification system;"@en;
+	 prov:wasAttributedTo 'document'.
+
+:publicly_accessible_space rdf:type owl:Class;
+	 rdfs:label "publicly accessible space"@en;
+	 rdfs:comment " means any publicly or privately owned physical place accessible to an undetermined number of natural persons, regardless of whether certain conditions for access may apply, and regardless of the potential capacity restrictions;"@en;
+	 prov:wasAttributedTo 'document'.
+
+:law_enforcement_authority rdf:type owl:Class;
+	 rdfs:label "law enforcement authority"@en;
+	 rdfs:comment " means: any public authority competent for the prevention, investigation, detection or prosecution of criminal offences or the execution of criminal penalties, including the safeguarding against and the prevention of threats to public security; or any other body or entity entrusted by Member State law to exercise public authority and public powers for the purposes of the prevention, investigation, detection or prosecution of criminal offences or the execution of criminal penalties, including the safeguarding against and the prevention of threats to public security;"@en;
+	 prov:wasAttributedTo 'document'.
+
+:law_enforcement rdf:type owl:Class;
+	 rdfs:label "law enforcement"@en;
+	 rdfs:comment " means activities carried out by law enforcement authorities or on their behalf for the prevention, investigation, detection or prosecution of criminal offences or the execution of criminal penalties, including safeguarding against and preventing threats to public security;"@en;
+	 prov:wasAttributedTo 'document'.
+
+:AI_Office rdf:type owl:Class;
+	 rdfs:label "AI Office"@en;
+	 rdfs:comment " means the Commission’s function of contributing to the implementation, monitoring and supervision of AI systems and general-purpose AI models, and AI governance, provided for in Commission Decision of 24January 2024; references in this Regulation to the AI Office shall be construed as references to the Commission;"@en;
+	 prov:wasAttributedTo 'document'.
+
+:national_competent_authority rdf:type owl:Class;
+	 rdfs:label "national competent authority"@en;
+	 rdfs:comment " means anotifying authority or amarket surveillance authority; as regards AI systems put into service or used by Union institutions, agencies, offices and bodies, references to national competent authorities or market surveillance authorities in this Regulation shall be construed as references to the European Data Protection Supervisor;"@en;
+	 prov:wasAttributedTo 'document'.
+
+:serious_incident rdf:type owl:Class;
+	 rdfs:label "serious incident"@en;
+	 rdfs:comment " means an incident or malfunctioning of an AI system that directly or indirectly leads to any of the following: the death of aperson, or serious harm to aperson’s health; a serious and irreversible disruption of the management or operation of critical infrastructure; the infringement of obligations under Union law intended to protect fundamental rights; serious harm to property or the environment;"@en;
+	 prov:wasAttributedTo 'document'.
+
+:personal_data rdf:type owl:Class;
+	 rdfs:label "personal data"@en;
+	 rdfs:comment " means personal data as defined in Article4, point (1), of Regulation(EU)2016/679;"@en;
+	 prov:wasAttributedTo 'document'.
+
+:non-personal_data rdf:type owl:Class;
+	 rdfs:label "non-personal data"@en;
+	 rdfs:comment " means data other than personal data as defined in Article4, point (1), of Regulation (EU) 2016/679;"@en;
+	 prov:wasAttributedTo 'document'.
+
+:profiling rdf:type owl:Class;
+	 rdfs:label "profiling"@en;
+	 rdfs:comment " means profiling as defined in Article4, point (4), of Regulation (EU) 2016/679;"@en;
+	 prov:wasAttributedTo 'document'.
+
+:real-world_testing_plan rdf:type owl:Class;
+	 rdfs:label "real-world testing plan"@en;
+	 rdfs:comment " means adocument that describes the objectives, methodology, geographical, population and temporal scope, monitoring, organisation and conduct of testing in real-world conditions;"@en;
+	 prov:wasAttributedTo 'document'.
+
+:sandbox_plan rdf:type owl:Class;
+	 rdfs:label "sandbox plan"@en;
+	 rdfs:comment " means adocument agreed between the participating provider and the competent authority describing the objectives, conditions, timeframe, methodology and requirements for the activities carried out within the sandbox;"@en;
+	 prov:wasAttributedTo 'document'.
+
+:AI_regulatory_sandbox rdf:type owl:Class;
+	 rdfs:label "AI regulatory sandbox"@en;
+	 rdfs:comment " means acontrolled framework set up by acompetent authority which offers providers or prospective providers of AI systems the possibility to develop, train, validate and test, where appropriate in real-world conditions, an innovative AI system, pursuant to asandbox plan for alimited time under regulatory supervision;"@en;
+	 prov:wasAttributedTo 'document'.
+
+:AI_literacy rdf:type owl:Class;
+	 rdfs:label "AI literacy"@en;
+	 rdfs:comment " means skills, knowledge and understanding that allow providers, deployers and affected persons, taking into account their respective rights and obligations in the context of this Regulation, to make an informed deployment of AI systems, as well as to gain awareness about the opportunities and risks of AI and possible harm it can cause;"@en;
+	 prov:wasAttributedTo 'document'.
+
+:testing_in_real-world_conditions rdf:type owl:Class;
+	 rdfs:label "testing in real-world conditions"@en;
+	 rdfs:comment " means the temporary testing of an AI system for its intended purpose in real-world conditions outside alaboratory or otherwise simulated environment, with aview to gathering reliable and robust data and to assessing and verifying the conformity of the AI system with the requirements of this Regulation and it does not qualify as placing the AI system on the market or putting it into service within the meaning of this Regulation, provided that all the conditions laid down in Article57 or 60 are fulfilled;"@en;
+	 prov:wasAttributedTo 'document'.
+
+:subject rdf:type owl:Class;
+	 rdfs:label "subject"@en;
+	 rdfs:comment ", for the purpose of real-world testing, means anatural person who participates in testing in real-world conditions;"@en;
+	 prov:wasAttributedTo 'document'.
+
+:informed_consent rdf:type owl:Class;
+	 rdfs:label "informed consent"@en;
+	 rdfs:comment " means asubject’s freely given, specific, unambiguous and voluntary expression of his or her willingness to participate in aparticular testing in real-world conditions, after having been informed of all aspects of the testing that are relevant to the subject’s decision to participate;"@en;
+	 prov:wasAttributedTo 'document'.
+
+:deep_fake rdf:type owl:Class;
+	 rdfs:label "deep fake"@en;
+	 rdfs:comment " means AI-generated or manipulated image, audio or video content that resembles existing persons, objects, places, entities or events and would falsely appear to aperson to be authentic or truthful;"@en;
+	 prov:wasAttributedTo 'document'.
+
+:widespread_infringement rdf:type owl:Class;
+	 rdfs:label "widespread infringement"@en;
+	 rdfs:comment " means any act or omission contrary to Union law protecting the interest of individuals, which: has harmed or is likely to harm the collective interests of individuals residing in at least two Member States other than the Member State in which: the act or omission originated or took place; the provider concerned, or, where applicable, its authorised representative is located or established; or the deployer is established, when the infringement is committed by the deployer; has caused, causes or is likely to cause harm to the collective interests of individuals and has common features, including the same unlawful practice or the same interest being infringed, and is occurring concurrently, committed by the same operator, in at least three Member States;"@en;
+	 prov:wasAttributedTo 'document'.
+
+:critical_infrastructure rdf:type owl:Class;
+	 rdfs:label "critical infrastructure"@en;
+	 rdfs:comment " means critical infrastructure as defined in Article2, point (4), of Directive (EU)2022/2557;"@en;
+	 prov:wasAttributedTo 'document'.
+
+:general-purpose_AI_model rdf:type owl:Class;
+	 rdfs:label "general-purpose AI model"@en;
+	 rdfs:comment " means an AI model, including where such an AI model is trained with alarge amount of data using self-supervision at scale, that displays significant generality and is capable of competently performing awide range of distinct tasks regardless of the way the model is placed on the market and that can be integrated into avariety of downstream systems or applications, except AI models that are used for research, development or prototyping activities before they are placed on the market;"@en;
+	 prov:wasAttributedTo 'document'.
+
+:high-impact_capabilities rdf:type owl:Class;
+	 rdfs:label "high-impact capabilities"@en;
+	 rdfs:comment " means capabilities that match or exceed the capabilities recorded in the most advanced general-purpose AI models;"@en;
+	 prov:wasAttributedTo 'document'.
+
+:systemic_risk rdf:type owl:Class;
+	 rdfs:label "systemic risk"@en;
+	 rdfs:comment " means arisk that is specific to the high-impact capabilities of general-purpose AI models, having asignificant impact on the Union market due to their reach, or due to actual or reasonably foreseeable negative effects on public health, safety, public security, fundamental rights, or the society as awhole, that can be propagated at scale across the value chain;"@en;
+	 prov:wasAttributedTo 'document'.
+
+:general-purpose_AI_system rdf:type owl:Class;
+	 rdfs:label "general-purpose AI system"@en;
+	 rdfs:comment " means an AI system which is based on ageneral-purpose AI model and which has the capability to serve avariety of purposes, both for direct use as well as for integration in other AI systems;"@en;
+	 prov:wasAttributedTo 'document'.
+
+:floating-point_operation rdf:type owl:Class;
+	 rdfs:label "floating-point operation"@en;
+	 rdfs:comment " means any mathematical operation or assignment involving floating-point numbers, which are asubset of the real numbers typically represented on computers by an integer of fixed precision scaled by an integer exponent of afixed base;"@en;
+	 prov:wasAttributedTo 'document'.
+
+:downstream_provider rdf:type owl:Class;
+	 rdfs:label "downstream provider"@en;
+	 rdfs:comment " means aprovider of an AI system, including ageneral-purpose AI system, which integrates an AI model, regardless of whether the AI model is provided by themselves and vertically integrated or provided by another entity based on contractual relations."@en;
+	 prov:wasAttributedTo 'document'.
+
+:Prohibited_AI_Practice rdf:type owl:Class;
+	 rdfs:label "Prohibited AI Practice"@en;
+	 rdfs:comment "A status condition assigned to an AI system or activity that is explicitly forbidden under the Regulation, triggering immediate legal consequences such as withdrawal or fines."@en;
+	 prov:wasAttributedTo 'LLM'.
+
+:Affected_Person_AI_System_Use rdf:type owl:Class;
+	 rdfs:label "Affected Person (AI System Use)"@en;
+	 rdfs:comment "A functional role describing a natural person located in the Union who is directly or indirectly influenced by an AI system's operation or output, and who may be entitled to specific rights or protections under this Regulation."@en;
+	 prov:wasAttributedTo 'LLM'.
+
+:Administrative_Fine_GPAI_Provider rdf:type owl:Class;
+	 rdfs:label "Administrative Fine (GPAI Provider)"@en;
+	 rdfs:comment "A legal consequence for providers of general-purpose AI models who negligently or intentionally infringe specific provisions, fail to comply with information requests, or deny access for evaluation, subject to fines up to 3% of turnover or EUR 15,000,000."@en;
+	 prov:wasAttributedTo 'LLM'.
+
+:AI_Component_Supplier rdf:type owl:Class;
+	 rdfs:label "AI Component Supplier"@en;
+	 rdfs:comment "A functional role describing any third party that supplies an AI system, tools, services, components, or processes that are used or integrated into a high-risk AI system, and is obligated by written agreement to provide necessary information and assistance to the provider."@en;
+	 prov:wasAttributedTo 'LLM'.
+
+:Copyright_Compliance_Obligation_AI_Model_Provider rdf:type owl:Class;
+	 rdfs:label "Copyright Compliance Obligation (AI Model Provider)"@en;
+	 rdfs:comment "A mandatory legal duty for providers of general-purpose AI models to implement a policy that ensures compliance with Union copyright and related rights law, including identifying and respecting rights reservations in training data."@en;
+	 prov:wasAttributedTo 'LLM'.
+
+:Systemic_Risk_General-Purpose_AI_Model rdf:type owl:Class;
+	 rdfs:label "Systemic Risk General-Purpose AI Model"@en;
+	 rdfs:comment "A classification for a general-purpose AI model that meets specific criteria (e.g., high-impact capabilities, computational power) and is deemed to pose significant, widespread risks, triggering additional obligations for its provider."@en;
+	 prov:wasAttributedTo 'LLM'.
+
+:Right_to_AI_Explanation rdf:type owl:Class;
+	 rdfs:label "Right to AI Explanation"@en;
+	 rdfs:comment "A fundamental legal right for an affected person to receive clear and meaningful explanations from a deployer regarding the role of a high-risk AI system in a decision that produces legal effects or significantly impacts them adversely."@en;
+	 prov:wasAttributedTo 'LLM'.
+
+:Public_Service_Deployer rdf:type owl:Class;
+	 rdfs:label "Public Service Deployer"@en;
+	 rdfs:comment "A specific functional role for a deployer that is a body governed by public law or a private entity providing public services, subject to the obligation of performing a Fundamental Rights Impact Assessment for certain high-risk AI systems."@en;
+	 prov:wasAttributedTo 'LLM'.
+
+:Real-World_Testing_Consent_Subject rdf:type owl:Class;
+	 rdfs:label "Real-World Testing Consent (Subject)"@en;
+	 rdfs:comment "The legally required, freely given, specific, unambiguous, and voluntary expression of willingness by a natural person to participate in the testing of an AI system in real-world conditions, after being fully informed of all relevant aspects."@en;
+	 prov:wasAttributedTo 'LLM'.
+
+:Synthetic_Content_AI_System rdf:type owl:Class;
+	 rdfs:label "Synthetic Content AI System"@en;
+	 rdfs:comment "A type of AI system that generates or manipulates audio, image, video, or text content and is subject to transparency obligations, specifically requiring its outputs to be marked as artificially generated or manipulated in a machine-readable format."@en;
+	 prov:wasAttributedTo 'LLM'.
+
+:Authorised_Derogation_Public_Interest rdf:type owl:Class;
+	 rdfs:label "Authorised Derogation (Public Interest)"@en;
+	 rdfs:comment "A temporary legal status granted by a market surveillance authority, allowing the placing on the market or putting into service of specific high-risk AI systems without full conformity assessment for exceptional public security, health, or environmental protection reasons, subject to strict conditions."@en;
+	 prov:wasAttributedTo 'LLM'.
+
+:Presumption_of_Conformity_Status rdf:type owl:Class;
+	 rdfs:label "Presumption of Conformity Status"@en;
+	 rdfs:comment "A legal status where an AI system or body is legally presumed to comply with specific regulatory requirements if it conforms to harmonised standards, common specifications, or other certified criteria, potentially shifting the burden of proof in compliance arguments."@en;
+	 prov:wasAttributedTo 'LLM'.
+
+:Fundamental_Rights_Impact_Assessment rdf:type owl:Class;
+	 rdfs:label "Fundamental Rights Impact Assessment"@en;
+	 rdfs:comment "A mandatory procedural step that certain public service deployers must perform to evaluate the potential impact of a high-risk AI system on fundamental rights prior to its deployment, influencing the legality of its use."@en;
+	 prov:wasAttributedTo 'LLM'.
+
+:Risk-Presenting_AI_System_Status rdf:type owl:Class;
+	 rdfs:label "Risk-Presenting AI System Status"@en;
+	 rdfs:comment "A status condition for any AI system that poses a risk to the health or safety, or fundamental rights of persons, triggering investigation by market surveillance authorities and potentially leading to mandatory corrective actions or market restrictions."@en;
+	 prov:wasAttributedTo 'LLM'.
+
+:Administrative_Fine_Prohibited_AI_Practice rdf:type owl:Class;
+	 rdfs:label "Administrative Fine (Prohibited AI Practice)"@en;
+	 rdfs:comment "A severe legal consequence for non-compliance with prohibited AI practices, involving administrative fines up to EUR 35,000,000 or 7% of worldwide annual turnover, whichever is higher."@en;
+	 prov:wasAttributedTo 'LLM'.
+
+:AI_Regulatory_Sandbox_Framework rdf:type owl:Class;
+	 rdfs:label "AI Regulatory Sandbox Framework"@en;
+	 rdfs:comment "A controlled legal and technical environment established by a competent authority to facilitate the development, training, validation, and testing of innovative AI systems under regulatory supervision for a limited time, offering specific legal flexibilities."@en;
+	 prov:wasAttributedTo 'LLM'.
+
+:Notified_Body_Independence_Status rdf:type owl:Class;
+	 rdfs:label "Notified Body Independence Status"@en;
+	 rdfs:comment "A critical status condition requiring a notified body to be free from direct involvement or economic interest in the design, development, marketing, or use of the AI systems it assesses, ensuring impartiality in conformity assessment."@en;
+	 prov:wasAttributedTo 'LLM'.
+
+:AI_Scientific_Panel_Expert rdf:type owl:Class;
+	 rdfs:label "AI Scientific Panel Expert"@en;
+	 rdfs:comment "A functional role for an independent expert appointed by the Commission to provide scientific or technical advice to the AI Office, particularly concerning systemic risks of general-purpose AI models and enforcement activities."@en;
+	 prov:wasAttributedTo 'LLM'.
+
+:Union_Market_Operator_Third_Country rdf:type owl:Class;
+	 rdfs:label "Union Market Operator (Third Country)"@en;
+	 rdfs:comment "A functional role describing any provider or deployer of an AI system established or located in a third country, whose AI system's output is used in the Union, thereby subjecting them to the Regulation's obligations."@en;
+	 prov:wasAttributedTo 'LLM'.
+
+:Deemed_Provider rdf:type owl:Class;
+	 rdfs:label "Deemed Provider"@en;
+	 rdfs:comment "A legal status assigned to a distributor, importer, deployer, or other third-party who, by putting their name or trademark on an AI system, making a substantial modification, or changing its intended purpose, assumes the full obligations of a provider under this Regulation."@en;
+	 prov:wasAttributedTo 'LLM'.
+
+#################################################################
+# Predicate description
+#################################################################
+
+:receives rdf:type owl:ObjectProperty;
+	 rdfs:label "receives"@en;
+	 rdfs:comment "An AI system takes in input data to generate outputs."@en;
+	 schema:domainIncludes :AI_system,
+		:deployer;
+	 schema:rangeIncludes :Deployers_receive_instructions_for_use_for_an_AI_system,
+		:input_data;
+	 prov:wasAttributedTo "LLM".
+
+:uses rdf:type owl:ObjectProperty;
+	 rdfs:label "uses"@en;
+	 rdfs:comment "A deployer uses an AI system under its authority."@en;
+	 schema:domainIncludes :AI_system,
+		:Union_Market_Operator_Third_Country,
+		:deployer;
+	 schema:rangeIncludes :biometric_data,
+		:A_deployer_uses_an_AI_system_under_its_authority,
+		:Union_Market_Operators_Third_Country_use_AI_systems_where_the_output_is_used_in_the_Union;
+	 prov:wasAttributedTo "LLM".
+
+:isA rdf:type owl:ObjectProperty;
+	 rdfs:label "isA"@en;
+	 rdfs:comment "A post-remote biometric identification system is a specific type of remote biometric identification system."@en;
+	 schema:domainIncludes :provider,
+		:remote_biometric_identification_system,
+		:emotion_recognition_system,
+		:special_categories_of_personal_data,
+		:systemic_risk,
+		:general-purpose_AI_system,
+		:importer,
+		:authorised_representative,
+		:Union_Market_Operator_Third_Country,
+		:biometric_data,
+		:biometric_categorisation_system,
+		:post-remote_biometric_identification_system,
+		:distributor,
+		:deployer,
+		:real-time_remote_biometric_identification_system,
+		:Real-World_Testing_Consent_Subject,
+		:notified_body;
+	 schema:rangeIncludes :A_post-remote_biometric_identification_system_is_a_specific_type_of_remote_biometric_identification_system,
+		:Special_categories_of_personal_data_are_a_subset_of_personal_data,
+		:A_biometric_categorisation_system_is_a_specific_type_of_AI_system,
+		:A_distributor_is_defined_as_a_type_of_operator,
+		:Biometric_data_is_a_type_of_personal_data,
+		:Deployers_established_in_a_third_country_whose_AI_system_output_is_used_in_the_Union_are_considered_Union_Market_Operators_Third_Country,
+		:A_real-time_remote_biometric_identification_system_is_a_specific_type_of_remote_biometric_identification_system,
+		:A_provider_is_defined_as_a_type_of_operator,
+		:A_remote_biometric_identification_system_is_a_specific_type_of_AI_system,
+		:Systemic_risk_is_a_specific_type_of_risk_typically_associated_with_high-impact_capabilities_of_general-purpose_AI_models,
+		:A_deployer_is_defined_as_a_type_of_operator,
+		:An_authorised_representative_is_defined_as_a_type_of_operator,
+		:AI_system,
+		:An_importer_is_defined_as_a_type_of_operator,
+		:A_notified_body_is_a_type_of_conformity_assessment_body_that_has_been_officially_notified,
+		:Providers_established_in_a_third_country_whose_AI_system_output_is_used_in_the_Union_are_considered_Union_Market_Operators_Third_Country,
+		:An_emotion_recognition_system_is_a_specific_type_of_AI_system,
+		:Real-world_testing_consent_is_a_specific_type_of_informed_consent;
+	 prov:wasAttributedTo "LLM".
+
+:poses rdf:type owl:ObjectProperty;
+	 rdfs:label "poses"@en;
+	 rdfs:comment "An AI system can pose risks to health, safety, or fundamental rights."@en;
+	 schema:domainIncludes :AI_system;
+	 schema:rangeIncludes :risk;
+	 prov:wasAttributedTo "LLM".
+
+:isUsedAs rdf:type owl:ObjectProperty;
+	 rdfs:label "isUsedAs"@en;
+	 rdfs:comment "An AI system can be intended for use as a safety component of a product."@en;
+	 schema:domainIncludes :AI_system;
+	 schema:rangeIncludes :safety_component;
+	 prov:wasAttributedTo "LLM".
+
+:accompaniedBy rdf:type owl:ObjectProperty;
+	 rdfs:label "accompaniedBy"@en;
+	 rdfs:comment "High-risk AI systems are accompanied by instructions for use."@en;
+	 schema:domainIncludes :AI_system;
+	 schema:rangeIncludes :instructions_for_use;
+	 prov:wasAttributedTo "LLM".
+
+:canBe rdf:type owl:ObjectProperty;
+	 rdfs:label "canBe"@en;
+	 rdfs:comment "An AI system's placing on the market, putting into service, or use can constitute a prohibited AI practice."@en;
+	 schema:domainIncludes :AI_system;
+	 schema:rangeIncludes :Prohibited_AI_Practice,
+		:An_AI_system_can_be_understood_to_present_a_risk_to_health_safety_or_fundamental_rights_leading_to_this_status;
+	 prov:wasAttributedTo "LLM".
+
+:generates rdf:type owl:ObjectProperty;
+	 rdfs:label "generates"@en;
+	 rdfs:comment "An AI system, specifically a synthetic content AI system, can generate or manipulate content constituting a deep fake."@en;
+	 schema:domainIncludes :Synthetic_Content_AI_System;
+	 schema:rangeIncludes :deep_fake;
+	 prov:wasAttributedTo "LLM".
+
+:trainedWith rdf:type owl:ObjectProperty;
+	 rdfs:label "trainedWith"@en;
+	 rdfs:comment "AI systems making use of training techniques are developed based on training data."@en;
+	 schema:domainIncludes :AI_system;
+	 schema:rangeIncludes :training_data;
+	 prov:wasAttributedTo "LLM".
+
+:evaluatedWith rdf:type owl:ObjectProperty;
+	 rdfs:label "evaluatedWith"@en;
+	 rdfs:comment "AI systems are evaluated using validation data."@en;
+	 schema:domainIncludes :AI_system;
+	 schema:rangeIncludes :validation_data,
+		:AI_systems_are_evaluated_using_testing_data;
+	 prov:wasAttributedTo "LLM".
+
+:canBeIntegratedInto rdf:type owl:ObjectProperty;
+	 rdfs:label "canBeIntegratedInto"@en;
+	 rdfs:comment "A general-purpose AI model can be integrated into a variety of downstream AI systems or applications."@en;
+	 schema:domainIncludes :general-purpose_AI_model;
+	 schema:rangeIncludes :AI_system;
+	 prov:wasAttributedTo "LLM".
+
+:canBeClassifiedAs rdf:type owl:ObjectProperty;
+	 rdfs:label "canBeClassifiedAs"@en;
+	 rdfs:comment "A general-purpose AI model can be classified as having systemic risk if it meets certain conditions."@en;
+	 schema:domainIncludes :general-purpose_AI_model;
+	 schema:rangeIncludes :Systemic_Risk_General-Purpose_AI_Model;
+	 prov:wasAttributedTo "LLM".
+
+:possesses rdf:type owl:ObjectProperty;
+	 rdfs:label "possesses"@en;
+	 rdfs:comment "A general-purpose AI model classified with systemic risk possesses high-impact capabilities."@en;
+	 schema:domainIncludes :Systemic_Risk_General-Purpose_AI_Model;
+	 schema:rangeIncludes :high-impact_capabilities;
+	 prov:wasAttributedTo "LLM".
+
+:isOtherThan rdf:type owl:ObjectProperty;
+	 rdfs:label "isOtherThan"@en;
+	 rdfs:comment "Non-personal data is distinct from personal data."@en;
+	 schema:domainIncludes :non-personal_data;
+	 schema:rangeIncludes :personal_data;
+	 prov:wasAttributedTo "LLM".
+
+:includes rdf:type owl:ObjectProperty;
+	 rdfs:label "includes"@en;
+	 rdfs:comment "A national competent authority includes a market surveillance authority."@en;
+	 schema:domainIncludes :national_competent_authority;
+	 schema:rangeIncludes :A_national_competent_authority_includes_a_market_surveillance_authority,
+		:notifying_authority;
+	 prov:wasAttributedTo "LLM".
+
+:develops rdf:type owl:ObjectProperty;
+	 rdfs:label "develops"@en;
+	 rdfs:comment "A provider develops a general-purpose AI model."@en;
+	 schema:domainIncludes :provider;
+	 schema:rangeIncludes :A_provider_develops_a_general-purpose_AI_model,
+		:AI_system;
+	 prov:wasAttributedTo "LLM".
+
+:placesOnTheMarket rdf:type owl:ObjectProperty;
+	 rdfs:label "placesOnTheMarket"@en;
+	 rdfs:comment "An importer places an AI system on the market."@en;
+	 schema:domainIncludes :provider,
+		:importer;
+	 schema:rangeIncludes :AI_system,
+		:A_provider_places_a_general-purpose_AI_model_on_the_market,
+		:An_importer_places_an_AI_system_on_the_market;
+	 prov:wasAttributedTo "LLM".
+
+:putsIntoService rdf:type owl:ObjectProperty;
+	 rdfs:label "putsIntoService"@en;
+	 rdfs:comment "A provider puts an AI system into service."@en;
+	 schema:domainIncludes :provider;
+	 schema:rangeIncludes :AI_system;
+	 prov:wasAttributedTo "LLM".
+
+:provides rdf:type owl:ObjectProperty;
+	 rdfs:label "provides"@en;
+	 rdfs:comment "A provider provides instructions for use for an AI system."@en;
+	 schema:domainIncludes :provider;
+	 schema:rangeIncludes :instructions_for_use;
+	 prov:wasAttributedTo "LLM".
+
+:establishes rdf:type owl:ObjectProperty;
+	 rdfs:label "establishes"@en;
+	 rdfs:comment "A provider establishes a post-market monitoring system for high-risk AI systems."@en;
+	 schema:domainIncludes :provider;
+	 schema:rangeIncludes :post-market_monitoring_system;
+	 prov:wasAttributedTo "LLM".
+
+:ensuresComplianceOf rdf:type owl:ObjectProperty;
+	 rdfs:label "ensuresComplianceOf"@en;
+	 rdfs:comment "Importers ensure AI system compliance during storage or transport."@en;
+	 schema:domainIncludes :provider,
+		:importer,
+		:distributor;
+	 schema:rangeIncludes :AI_system,
+		:Importers_ensure_AI_system_compliance_during_storage_or_transport,
+		:Distributors_ensure_AI_system_compliance_during_storage_or_transport;
+	 prov:wasAttributedTo "LLM".
+
+:ensuresUndergoes rdf:type owl:ObjectProperty;
+	 rdfs:label "ensuresUndergoes"@en;
+	 rdfs:comment "Providers ensure their high-risk AI system undergoes conformity assessment."@en;
+	 schema:domainIncludes :provider;
+	 schema:rangeIncludes :conformity_assessment;
+	 prov:wasAttributedTo "LLM".
+
+:affixes rdf:type owl:ObjectProperty;
+	 rdfs:label "affixes"@en;
+	 rdfs:comment "A provider affixes the CE marking to an AI system."@en;
+	 schema:domainIncludes :provider;
+	 schema:rangeIncludes :CE_marking;
+	 prov:wasAttributedTo "LLM".
+
+:demonstratesConformityTo rdf:type owl:ObjectProperty;
+	 rdfs:label "demonstratesConformityTo"@en;
+	 rdfs:comment "Providers demonstrate AI system conformity to national competent authorities upon request."@en;
+	 schema:domainIncludes :provider;
+	 schema:rangeIncludes :national_competent_authority;
+	 prov:wasAttributedTo "LLM".
+
+:keepsAtDisposalOf rdf:type owl:ObjectProperty;
+	 rdfs:label "keepsAtDisposalOf"@en;
+	 rdfs:comment "An authorised representative keeps documentation at the disposal of national competent authorities."@en;
+	 schema:domainIncludes :provider,
+		:authorised_representative;
+	 schema:rangeIncludes :An_authorised_representative_keeps_documentation_for_general-purpose_AI_models_at_the_disposal_of_the_AI_Office,
+		:national_competent_authority,
+		:An_authorised_representative_keeps_documentation_at_the_disposal_of_national_competent_authorities;
+	 prov:wasAttributedTo "LLM".
+
+:informs rdf:type owl:ObjectProperty;
+	 rdfs:label "informs"@en;
+	 rdfs:comment "Deployers inform market surveillance authorities of AI system risks or serious incidents."@en;
+	 schema:domainIncludes :provider,
+		:importer,
+		:authorised_representative,
+		:distributor,
+		:deployer;
+	 schema:rangeIncludes :Deployers_inform_market_surveillance_authorities_of_AI_system_risks_or_serious_incidents,
+		:Deployers_inform_importers_of_serious_incidents_related_to_AI_systems,
+		:Distributors_inform_importers_of_AI_system_risks_or_non-conformity,
+		:distributor,
+		:Providers_inform_authorised_representatives_of_AI_system_non-conformity_or_risks,
+		:Providers_inform_importers_of_AI_system_non-conformity_or_risks,
+		:Providers_inform_market_surveillance_authorities_of_AI_system_risks_or_non-compliance,
+		:Importers_inform_providers_of_AI_system_risks_or_non-conformity,
+		:Importers_inform_authorised_representatives_of_AI_system_risks_or_non-conformity,
+		:Providers_inform_deployers_of_AI_system_non-conformity_or_risks,
+		:Distributors_inform_providers_of_AI_system_risks_or_non-conformity,
+		:Distributors_inform_national_competent_authorities_of_AI_system_risks_or_non-conformity,
+		:Providers_inform_affected_persons_of_direct_interaction_with_an_AI_system,
+		:An_authorised_representative_informs_the_notified_body_of_mandate_termination,
+		:Providers_inform_notified_bodies_of_AI_system_risks_or_non-compliance,
+		:Deployers_inform_distributors_of_unregistered_AI_systems,
+		:An_authorised_representative_informs_the_market_surveillance_authority_of_mandate_termination_or_AI_system_risks,
+		:Deployers_inform_affected_persons_of_AI_system_use_in_the_workplace_or_in_decision-making,
+		:Importers_inform_market_surveillance_authorities_of_AI_system_risks_or_non-conformity,
+		:An_authorised_representative_informs_the_AI_Office_of_mandate_termination;
+	 prov:wasAttributedTo "LLM".
+
+:takesCorrectiveActionsFor rdf:type owl:ObjectProperty;
+	 rdfs:label "takesCorrectiveActionsFor"@en;
+	 rdfs:comment "Providers take corrective actions for non-compliant AI systems."@en;
+	 schema:domainIncludes :provider,
+		:distributor;
+	 schema:rangeIncludes :AI_system,
+		:Distributors_take_corrective_actions_for_non-compliant_AI_systems;
+	 prov:wasAttributedTo "LLM".
+
+:initiates rdf:type owl:ObjectProperty;
+	 rdfs:label "initiates"@en;
+	 rdfs:comment "Providers initiate the withdrawal of non-compliant AI systems from the market."@en;
+	 schema:domainIncludes :provider;
+	 schema:rangeIncludes :withdrawal_of_an_AI_system,
+		:Providers_initiate_the_recall_of_non-compliant_AI_systems;
+	 prov:wasAttributedTo "LLM".
+
+:grantsAccessTo rdf:type owl:ObjectProperty;
+	 rdfs:label "grantsAccessTo"@en;
+	 rdfs:comment "Providers grant access to AI system logs to national competent authorities upon request."@en;
+	 schema:domainIncludes :provider;
+	 schema:rangeIncludes :national_competent_authority;
+	 prov:wasAttributedTo "LLM".
+
+:appoints rdf:type owl:ObjectProperty;
+	 rdfs:label "appoints"@en;
+	 rdfs:comment "Providers established in third countries appoint an authorised representative in the Union."@en;
+	 schema:domainIncludes :provider;
+	 schema:rangeIncludes :authorised_representative;
+	 prov:wasAttributedTo "LLM".
+
+:mandates rdf:type owl:ObjectProperty;
+	 rdfs:label "mandates"@en;
+	 rdfs:comment "A provider gives a written mandate to its authorised representative to perform obligations."@en;
+	 schema:domainIncludes :provider;
+	 schema:rangeIncludes :authorised_representative;
+	 prov:wasAttributedTo "LLM".
+
+:cooperatesWith rdf:type owl:ObjectProperty;
+	 rdfs:label "cooperatesWith"@en;
+	 rdfs:comment "Importers cooperate with national competent authorities to mitigate AI system risks."@en;
+	 schema:domainIncludes :provider,
+		:importer,
+		:distributor,
+		:authorised_representative;
+	 schema:rangeIncludes :Importers_cooperate_with_national_competent_authorities_to_mitigate_AI_system_risks,
+		:Providers_cooperate_with_deployers_when_organizing_testing_in_real-world_conditions,
+		:An_authorised_representative_cooperates_with_national_competent_authorities_to_mitigate_AI_system_risks,
+		:An_authorised_representative_cooperates_with_the_AI_Office_for_general-purpose_AI_model_compliance,
+		:Deemed_Provider,
+		:Distributors_cooperate_with_national_competent_authorities_to_mitigate_AI_system_risks;
+	 prov:wasAttributedTo "LLM".
+
+:providesAssistanceTo rdf:type owl:ObjectProperty;
+	 rdfs:label "providesAssistanceTo"@en;
+	 rdfs:comment "An initial provider provides necessary information and technical assistance to a new deemed provider for AI system compliance."@en;
+	 schema:domainIncludes :provider;
+	 schema:rangeIncludes :Deemed_Provider;
+	 prov:wasAttributedTo "LLM".
+
+:contractsWith rdf:type owl:ObjectProperty;
+	 rdfs:label "contractsWith"@en;
+	 rdfs:comment "A provider of a high-risk AI system contracts with a third party that supplies components, tools, or services."@en;
+	 schema:domainIncludes :provider;
+	 schema:rangeIncludes :AI_Component_Supplier;
+	 prov:wasAttributedTo "LLM".
+
+:marksOutputsOf rdf:type owl:ObjectProperty;
+	 rdfs:label "marksOutputsOf"@en;
+	 rdfs:comment "Providers of synthetic content AI systems mark their outputs as artificially generated or manipulated."@en;
+	 schema:domainIncludes :provider;
+	 schema:rangeIncludes :Synthetic_Content_AI_System;
+	 prov:wasAttributedTo "LLM".
+
+:notifies rdf:type owl:ObjectProperty;
+	 rdfs:label "notifies"@en;
+	 rdfs:comment "Deployers notify market surveillance authorities of fundamental rights impact assessment results."@en;
+	 schema:domainIncludes :provider,
+		:deployer;
+	 schema:rangeIncludes :Deployers_notify_market_surveillance_authorities_of_fundamental_rights_impact_assessment_results,
+		:AI_Office;
+	 prov:wasAttributedTo "LLM".
+
+:drawsUpDocumentationFor rdf:type owl:ObjectProperty;
+	 rdfs:label "drawsUpDocumentationFor"@en;
+	 rdfs:comment "Providers draw up technical documentation for their general-purpose AI models."@en;
+	 schema:domainIncludes :provider;
+	 schema:rangeIncludes :general-purpose_AI_model;
+	 prov:wasAttributedTo "LLM".
+
+:providesDocumentationTo rdf:type owl:ObjectProperty;
+	 rdfs:label "providesDocumentationTo"@en;
+	 rdfs:comment "Providers provide technical documentation for general-purpose AI models to national competent authorities upon request."@en;
+	 schema:domainIncludes :provider;
+	 schema:rangeIncludes :Providers_provide_technical_documentation_for_general-purpose_AI_models_to_national_competent_authorities_upon_request,
+		:AI_Office;
+	 prov:wasAttributedTo "LLM".
+
+:providesInformationTo rdf:type owl:ObjectProperty;
+	 rdfs:label "providesInformationTo"@en;
+	 rdfs:comment "Providers of general-purpose AI models make information available to downstream providers for integration."@en;
+	 schema:domainIncludes :provider,
+		:importer,
+		:distributor,
+		:authorised_representative;
+	 schema:rangeIncludes :An_authorised_representative_provides_information_to_national_competent_authorities_for_AI_system_conformity,
+		:Importers_provide_information_to_national_competent_authorities_for_AI_system_conformity,
+		:downstream_provider,
+		:An_authorised_representative_provides_information_to_the_AI_Office_for_general-purpose_AI_model_compliance,
+		:Distributors_provide_information_to_national_competent_authorities_for_AI_system_conformity;
+	 prov:wasAttributedTo "LLM".
+
+:has rdf:type owl:ObjectProperty;
+	 rdfs:label "has"@en;
+	 rdfs:comment "Providers of general-purpose AI models have an obligation to implement a policy for compliance with Union copyright law."@en;
+	 schema:domainIncludes :provider,
+		:Affected_Person_AI_System_Use;
+	 schema:rangeIncludes :Copyright_Compliance_Obligation_AI_Model_Provider,
+		:An_affected_person_has_the_right_to_obtain_explanations_regarding_decisions_based_on_high-risk_AI_systems;
+	 prov:wasAttributedTo "LLM".
+
+:makesAvailableSummaryOf rdf:type owl:ObjectProperty;
+	 rdfs:label "makesAvailableSummaryOf"@en;
+	 rdfs:comment "Providers of general-purpose AI models make a sufficiently detailed summary about the content used for training publicly available."@en;
+	 schema:domainIncludes :provider;
+	 schema:rangeIncludes :training_data;
+	 prov:wasAttributedTo "LLM".
+
+:evaluates rdf:type owl:ObjectProperty;
+	 rdfs:label "evaluates"@en;
+	 rdfs:comment "Providers of systemic risk general-purpose AI models perform model evaluations to identify and mitigate systemic risks."@en;
+	 schema:domainIncludes :provider,
+		:market_surveillance_authority;
+	 schema:rangeIncludes :Systemic_Risk_General-Purpose_AI_Model,
+		:Market_surveillance_authorities_evaluate_AI_systems_presenting_a_risk;
+	 prov:wasAttributedTo "LLM".
+
+:mitigates rdf:type owl:ObjectProperty;
+	 rdfs:label "mitigates"@en;
+	 rdfs:comment "Providers of systemic risk general-purpose AI models assess and mitigate possible systemic risks."@en;
+	 schema:domainIncludes :provider;
+	 schema:rangeIncludes :systemic_risk;
+	 prov:wasAttributedTo "LLM".
+
+:reports rdf:type owl:ObjectProperty;
+	 rdfs:label "reports"@en;
+	 rdfs:comment "Providers of systemic risk general-purpose AI models report relevant information about serious incidents."@en;
+	 schema:domainIncludes :provider;
+	 schema:rangeIncludes :serious_incident;
+	 prov:wasAttributedTo "LLM".
+
+:ensuresCybersecurityFor rdf:type owl:ObjectProperty;
+	 rdfs:label "ensuresCybersecurityFor"@en;
+	 rdfs:comment "Providers ensure an adequate level of cybersecurity protection for systemic risk general-purpose AI models."@en;
+	 schema:domainIncludes :provider;
+	 schema:rangeIncludes :Systemic_Risk_General-Purpose_AI_Model;
+	 prov:wasAttributedTo "LLM".
+
+:conducts rdf:type owl:ObjectProperty;
+	 rdfs:label "conducts"@en;
+	 rdfs:comment "Providers may conduct testing of high-risk AI systems in real-world conditions."@en;
+	 schema:domainIncludes :provider;
+	 schema:rangeIncludes :testing_in_real-world_conditions;
+	 prov:wasAttributedTo "LLM".
+
+:submits rdf:type owl:ObjectProperty;
+	 rdfs:label "submits"@en;
+	 rdfs:comment "Providers submit a real-world testing plan to the market surveillance authority."@en;
+	 schema:domainIncludes :provider;
+	 schema:rangeIncludes :real-world_testing_plan;
+	 prov:wasAttributedTo "LLM".
+
+:registers rdf:type owl:ObjectProperty;
+	 rdfs:label "registers"@en;
+	 rdfs:comment "An authorised representative complies with registration obligations for AI systems in the EU database."@en;
+	 schema:domainIncludes :provider,
+		:authorised_representative;
+	 schema:rangeIncludes :testing_in_real-world_conditions,
+		:An_authorised_representative_complies_with_registration_obligations_for_AI_systems_in_the_EU_database;
+	 prov:wasAttributedTo "LLM".
+
+:isExemptFrom rdf:type owl:ObjectProperty;
+	 rdfs:label "isExemptFrom"@en;
+	 rdfs:comment "Providers participating in an AI regulatory sandbox under certain conditions are exempt from administrative fines for infringements of the Regulation."@en;
+	 schema:domainIncludes :provider;
+	 schema:rangeIncludes :Administrative_Fine_Prohibited_AI_Practice,
+		:Providers_participating_in_an_AI_regulatory_sandbox_under_certain_conditions_are_exempt_from_administrative_fines_for_infringements_of_the_Regulation;
+	 prov:wasAttributedTo "LLM".
+
+:triggers rdf:type owl:ObjectProperty;
+	 rdfs:label "triggers"@en;
+	 rdfs:comment "Non-compliance with obligations by a provider (other than prohibited practices) triggers administrative fines."@en;
+	 schema:domainIncludes :provider;
+	 schema:rangeIncludes :Administrative_Fine_Prohibited_AI_Practice,
+		:Non-compliance_with_obligations_by_a_provider_other_than_prohibited_practices_triggers_administrative_fines;
+	 prov:wasAttributedTo "LLM".
+
+:isSubjectTo rdf:type owl:ObjectProperty;
+	 rdfs:label "isSubjectTo"@en;
+	 rdfs:comment "Providers of general-purpose AI models are subject to administrative fines for non-compliance with their obligations."@en;
+	 schema:domainIncludes :provider;
+	 schema:rangeIncludes :Administrative_Fine_GPAI_Provider;
+	 prov:wasAttributedTo "LLM".
+
+:failsToAffix rdf:type owl:ObjectProperty;
+	 rdfs:label "failsToAffix"@en;
+	 rdfs:comment "A provider's failure to affix the CE marking leads to formal non-compliance."@en;
+	 schema:domainIncludes :provider;
+	 schema:rangeIncludes :CE_marking;
+	 prov:wasAttributedTo "LLM".
+
+:failsToAppoint rdf:type owl:ObjectProperty;
+	 rdfs:label "failsToAppoint"@en;
+	 rdfs:comment "A provider's failure to appoint an authorised representative leads to formal non-compliance."@en;
+	 schema:domainIncludes :provider;
+	 schema:rangeIncludes :authorised_representative;
+	 prov:wasAttributedTo "LLM".
+
+:reportsTo rdf:type owl:ObjectProperty;
+	 rdfs:label "reportsTo"@en;
+	 rdfs:comment "Deployers report serious incidents or risks related to AI systems to providers."@en;
+	 schema:domainIncludes :deployer;
+	 schema:rangeIncludes :provider;
+	 prov:wasAttributedTo "LLM".
+
+:requestsAuthorizationFrom rdf:type owl:ObjectProperty;
+	 rdfs:label "requestsAuthorizationFrom"@en;
+	 rdfs:comment "Deployers of post-remote biometric identification systems request authorization from law enforcement authorities for system use."@en;
+	 schema:domainIncludes :deployer;
+	 schema:rangeIncludes :law_enforcement_authority;
+	 prov:wasAttributedTo "LLM".
+
+:submitsReportsTo rdf:type owl:ObjectProperty;
+	 rdfs:label "submitsReportsTo"@en;
+	 rdfs:comment "Deployers submit annual reports on post-remote biometric identification system use to national competent authorities."@en;
+	 schema:domainIncludes :deployer;
+	 schema:rangeIncludes :Deployers_submit_annual_reports_on_post-remote_biometric_identification_system_use_to_national_competent_authorities,
+		:market_surveillance_authority;
+	 prov:wasAttributedTo "LLM".
+
+:performs rdf:type owl:ObjectProperty;
+	 rdfs:label "performs"@en;
+	 rdfs:comment "Public service deployers perform a fundamental rights impact assessment for high-risk AI systems."@en;
+	 schema:domainIncludes :Public_Service_Deployer;
+	 schema:rangeIncludes :Fundamental_Rights_Impact_Assessment,
+		:Public_service_deployers_perform_a_fundamental_rights_impact_assessment_for_high-risk_AI_systems;
+	 prov:wasAttributedTo "LLM".
+
+:represents rdf:type owl:ObjectProperty;
+	 rdfs:label "represents"@en;
+	 rdfs:comment "An authorised representative represents a provider and acts on its behalf."@en;
+	 schema:domainIncludes :authorised_representative;
+	 schema:rangeIncludes :provider;
+	 prov:wasAttributedTo "LLM".
+
+:actsForProviderOf rdf:type owl:ObjectProperty;
+	 rdfs:label "actsForProviderOf"@en;
+	 rdfs:comment "An authorised representative acts on behalf of a provider of an AI system."@en;
+	 schema:domainIncludes :authorised_representative;
+	 schema:rangeIncludes :AI_system,
+		:An_authorised_representative_acts_on_behalf_of_a_provider_of_a_general-purpose_AI_model;
+	 prov:wasAttributedTo "LLM".
+
+:verifies rdf:type owl:ObjectProperty;
+	 rdfs:label "verifies"@en;
+	 rdfs:comment "Distributors verify that the AI system is accompanied by instructions for use."@en;
+	 schema:domainIncludes :importer,
+		:distributor,
+		:authorised_representative;
+	 schema:rangeIncludes :Distributors_verify_that_the_AI_system_is_accompanied_by_instructions_for_use,
+		:Importers_verify_that_the_provider_has_appointed_an_authorised_representative,
+		:Importers_verify_that_the_provider_has_carried_out_the_conformity_assessment_for_the_AI_system,
+		:Distributors_verify_that_the_AI_system_bears_the_required_CE_marking,
+		:conformity_assessment;
+	 prov:wasAttributedTo "LLM".
+
+:labels rdf:type owl:ObjectProperty;
+	 rdfs:label "labels"@en;
+	 rdfs:comment "Importers label AI systems with their identification."@en;
+	 schema:domainIncludes :importer;
+	 schema:rangeIncludes :AI_system;
+	 prov:wasAttributedTo "LLM".
+
+:keeps rdf:type owl:ObjectProperty;
+	 rdfs:label "keeps"@en;
+	 rdfs:comment "Importers keep instructions for use for AI systems."@en;
+	 schema:domainIncludes :importer;
+	 schema:rangeIncludes :instructions_for_use;
+	 prov:wasAttributedTo "LLM".
+
+:makesAvailableOnTheMarket rdf:type owl:ObjectProperty;
+	 rdfs:label "makesAvailableOnTheMarket"@en;
+	 rdfs:comment "A distributor makes an AI system available on the market."@en;
+	 schema:domainIncludes :distributor;
+	 schema:rangeIncludes :AI_system;
+	 prov:wasAttributedTo "LLM".
+
+:verifiesComplianceOf rdf:type owl:ObjectProperty;
+	 rdfs:label "verifiesComplianceOf"@en;
+	 rdfs:comment "Distributors verify that the importer has complied with their obligations."@en;
+	 schema:domainIncludes :distributor;
+	 schema:rangeIncludes :provider,
+		:Distributors_verify_that_the_importer_has_complied_with_their_obligations;
+	 prov:wasAttributedTo "LLM".
+
+:assumesObligationsOf rdf:type owl:ObjectProperty;
+	 rdfs:label "assumesObligationsOf"@en;
+	 rdfs:comment "A deemed provider assumes the full obligations of a provider."@en;
+	 schema:domainIncludes :Deemed_Provider;
+	 schema:rangeIncludes :provider;
+	 prov:wasAttributedTo "LLM".
+
+:putsNameOrTrademarkOn rdf:type owl:ObjectProperty;
+	 rdfs:label "putsNameOrTrademarkOn"@en;
+	 rdfs:comment "A deemed provider puts its name or trademark on an AI system, thereby assuming provider obligations."@en;
+	 schema:domainIncludes :Deemed_Provider;
+	 schema:rangeIncludes :AI_system;
+	 prov:wasAttributedTo "LLM".
+
+:makes rdf:type owl:ObjectProperty;
+	 rdfs:label "makes"@en;
+	 rdfs:comment "A deemed provider makes a substantial modification to an AI system."@en;
+	 schema:domainIncludes :Deemed_Provider;
+	 schema:rangeIncludes :substantial_modification;
+	 prov:wasAttributedTo "LLM".
+
+:modifies rdf:type owl:ObjectProperty;
+	 rdfs:label "modifies"@en;
+	 rdfs:comment "A deemed provider modifies the intended purpose of an AI system."@en;
+	 schema:domainIncludes :Deemed_Provider;
+	 schema:rangeIncludes :intended_purpose;
+	 prov:wasAttributedTo "LLM".
+
+:supplies rdf:type owl:ObjectProperty;
+	 rdfs:label "supplies"@en;
+	 rdfs:comment "An AI component supplier supplies tools, services, components, or processes for an AI system."@en;
+	 schema:domainIncludes :AI_Component_Supplier;
+	 schema:rangeIncludes :AI_system;
+	 prov:wasAttributedTo "LLM".
+
+:gives rdf:type owl:ObjectProperty;
+	 rdfs:label "gives"@en;
+	 rdfs:comment "Subjects of real-world testing give informed consent."@en;
+	 schema:domainIncludes :subject;
+	 schema:rangeIncludes :Real-World_Testing_Consent_Subject;
+	 prov:wasAttributedTo "LLM".
+
+:forParticipationIn rdf:type owl:ObjectProperty;
+	 rdfs:label "forParticipationIn"@en;
+	 rdfs:comment "Real-world testing consent is given for participation in testing in real-world conditions."@en;
+	 schema:domainIncludes :Real-World_Testing_Consent_Subject;
+	 schema:rangeIncludes :testing_in_real-world_conditions;
+	 prov:wasAttributedTo "LLM".
+
+:appliesTo rdf:type owl:ObjectProperty;
+	 rdfs:label "appliesTo"@en;
+	 rdfs:comment "Notified bodies must maintain independence from providers and other operators with economic interest."@en;
+	 schema:domainIncludes :Presumption_of_Conformity_Status,
+		:Notified_Body_Independence_Status;
+	 schema:rangeIncludes :A_general-purpose_AI_model_can_achieve_presumption_of_conformity_by_meeting_certain_criteria,
+		:An_AI_system_can_achieve_presumption_of_conformity_by_meeting_certain_criteria,
+		:notified_body;
+	 prov:wasAttributedTo "LLM".
+
+:isIndependentOf rdf:type owl:ObjectProperty;
+	 rdfs:label "isIndependentOf"@en;
+	 rdfs:comment "Notified bodies are independent of the provider of an AI system they assess."@en;
+	 schema:domainIncludes :AI_Scientific_Panel_Expert,
+		:notified_body;
+	 schema:rangeIncludes :provider,
+		:Notified_bodies_are_independent_of_any_other_operator_having_an_economic_interest_in_assessed_AI_systems,
+		:Experts_on_the_scientific_panel_are_independent_of_any_provider_of_AI_systems_or_general-purpose_AI_models;
+	 prov:wasAttributedTo "LLM".
+
+:notInvolvedIn rdf:type owl:ObjectProperty;
+	 rdfs:label "notInvolvedIn"@en;
+	 rdfs:comment "Notified bodies and their personnel are not directly involved in the design, development, marketing, or use of high-risk AI systems."@en;
+	 schema:domainIncludes :notified_body;
+	 schema:rangeIncludes :AI_system;
+	 prov:wasAttributedTo "LLM".
+
+:submitsApplicationTo rdf:type owl:ObjectProperty;
+	 rdfs:label "submitsApplicationTo"@en;
+	 rdfs:comment "Conformity assessment bodies submit applications for notification to the notifying authority."@en;
+	 schema:domainIncludes :conformity_assessment_body;
+	 schema:rangeIncludes :notifying_authority;
+	 prov:wasAttributedTo "LLM".
+
+:achieves rdf:type owl:ObjectProperty;
+	 rdfs:label "achieves"@en;
+	 rdfs:comment "A conformity assessment body demonstrates conformity with harmonised standards to achieve this status."@en;
+	 schema:domainIncludes :conformity_assessment_body;
+	 schema:rangeIncludes :Presumption_of_Conformity_Status;
+	 prov:wasAttributedTo "LLM".
+
+:basedOnConformityWith rdf:type owl:ObjectProperty;
+	 rdfs:label "basedOnConformityWith"@en;
+	 rdfs:comment "Presumption of conformity is based on conformity with common specifications."@en;
+	 schema:domainIncludes :Presumption_of_Conformity_Status;
+	 schema:rangeIncludes :harmonised_standard,
+		:Presumption_of_conformity_is_based_on_conformity_with_common_specifications;
+	 prov:wasAttributedTo "LLM".
+
+:requiresCorrectiveActionFrom rdf:type owl:ObjectProperty;
+	 rdfs:label "requiresCorrectiveActionFrom"@en;
+	 rdfs:comment "Market surveillance authorities require operators to take corrective actions for non-compliant AI systems."@en;
+	 schema:domainIncludes :market_surveillance_authority;
+	 schema:rangeIncludes :Market_surveillance_authorities_require_providers_to_take_corrective_actions_for_misclassified_AI_systems,
+		:operator;
+	 prov:wasAttributedTo "LLM".
+
+:requires rdf:type owl:ObjectProperty;
+	 rdfs:label "requires"@en;
+	 rdfs:comment "Market surveillance authorities require the recall of non-compliant AI systems."@en;
+	 schema:domainIncludes :market_surveillance_authority;
+	 schema:rangeIncludes :withdrawal_of_an_AI_system,
+		:Market_surveillance_authorities_require_the_recall_of_non-compliant_AI_systems;
+	 prov:wasAttributedTo "LLM".
+
+:prohibitsAvailabilityOf rdf:type owl:ObjectProperty;
+	 rdfs:label "prohibitsAvailabilityOf"@en;
+	 rdfs:comment "Market surveillance authorities can prohibit or restrict an AI system from being made available on its national market or put into service."@en;
+	 schema:domainIncludes :market_surveillance_authority;
+	 schema:rangeIncludes :AI_system;
+	 prov:wasAttributedTo "LLM".
+
+:withdraws rdf:type owl:ObjectProperty;
+	 rdfs:label "withdraws"@en;
+	 rdfs:comment "Market surveillance authorities can withdraw an AI system from the market."@en;
+	 schema:domainIncludes :market_surveillance_authority;
+	 schema:rangeIncludes :AI_system;
+	 prov:wasAttributedTo "LLM".
+
+:recalls rdf:type owl:ObjectProperty;
+	 rdfs:label "recalls"@en;
+	 rdfs:comment "Market surveillance authorities can recall an AI system."@en;
+	 schema:domainIncludes :market_surveillance_authority;
+	 schema:rangeIncludes :AI_system;
+	 prov:wasAttributedTo "LLM".
+
+:evaluatesClassificationOf rdf:type owl:ObjectProperty;
+	 rdfs:label "evaluatesClassificationOf"@en;
+	 rdfs:comment "Market surveillance authorities evaluate the classification of AI systems by providers (e.g., as non-high-risk)."@en;
+	 schema:domainIncludes :market_surveillance_authority;
+	 schema:rangeIncludes :AI_system;
+	 prov:wasAttributedTo "LLM".
+
+:requiresMeasuresFrom rdf:type owl:ObjectProperty;
+	 rdfs:label "requiresMeasuresFrom"@en;
+	 rdfs:comment "Market surveillance authorities require operators to take measures for compliant AI systems that still present a risk."@en;
+	 schema:domainIncludes :market_surveillance_authority;
+	 schema:rangeIncludes :operator;
+	 prov:wasAttributedTo "LLM".
+
+:grants rdf:type owl:ObjectProperty;
+	 rdfs:label "grants"@en;
+	 rdfs:comment "Market surveillance authorities may authorise derogations for placing or putting into service specific high-risk AI systems for public interest reasons."@en;
+	 schema:domainIncludes :market_surveillance_authority;
+	 schema:rangeIncludes :Authorised_Derogation_Public_Interest;
+	 prov:wasAttributedTo "LLM".
+
+:approves rdf:type owl:ObjectProperty;
+	 rdfs:label "approves"@en;
+	 rdfs:comment "Market surveillance authorities approve real-world testing plans."@en;
+	 schema:domainIncludes :market_surveillance_authority;
+	 schema:rangeIncludes :testing_in_real-world_conditions,
+		:Market_surveillance_authorities_approve_real-world_testing_plans;
+	 prov:wasAttributedTo "LLM".
+
+:supervises rdf:type owl:ObjectProperty;
+	 rdfs:label "supervises"@en;
+	 rdfs:comment "The AI Office supervises AI systems."@en;
+	 schema:domainIncludes :market_surveillance_authority,
+		:AI_Office;
+	 schema:rangeIncludes :testing_in_real-world_conditions,
+		:The_AI_Office_supervises_AI_systems,
+		:Market_surveillance_authorities_supervise_AI_systems_used_by_financial_institutions,
+		:The_AI_Office_supervises_general-purpose_AI_models;
+	 prov:wasAttributedTo "LLM".
+
+:suspends rdf:type owl:ObjectProperty;
+	 rdfs:label "suspends"@en;
+	 rdfs:comment "Market surveillance authorities can suspend testing in real-world conditions."@en;
+	 schema:domainIncludes :market_surveillance_authority;
+	 schema:rangeIncludes :testing_in_real-world_conditions;
+	 prov:wasAttributedTo "LLM".
+
+:terminates rdf:type owl:ObjectProperty;
+	 rdfs:label "terminates"@en;
+	 rdfs:comment "Market surveillance authorities can terminate testing in real-world conditions."@en;
+	 schema:domainIncludes :market_surveillance_authority;
+	 schema:rangeIncludes :testing_in_real-world_conditions;
+	 prov:wasAttributedTo "LLM".
+
+:requiresModificationFrom rdf:type owl:ObjectProperty;
+	 rdfs:label "requiresModificationFrom"@en;
+	 rdfs:comment "Market surveillance authorities can require deployers to modify aspects of testing in real-world conditions."@en;
+	 schema:domainIncludes :market_surveillance_authority;
+	 schema:rangeIncludes :provider,
+		:Market_surveillance_authorities_can_require_deployers_to_modify_aspects_of_testing_in_real-world_conditions;
+	 prov:wasAttributedTo "LLM".
+
+:organizesTestingFor rdf:type owl:ObjectProperty;
+	 rdfs:label "organizesTestingFor"@en;
+	 rdfs:comment "Market surveillance authorities organize testing of AI systems at the request of fundamental rights authorities."@en;
+	 schema:domainIncludes :market_surveillance_authority;
+	 schema:rangeIncludes :AI_system;
+	 prov:wasAttributedTo "LLM".
+
+:grantedAccessBy rdf:type owl:ObjectProperty;
+	 rdfs:label "grantedAccessBy"@en;
+	 rdfs:comment "Market surveillance authorities are granted access to data and documentation by providers for compliance assessment."@en;
+	 schema:domainIncludes :market_surveillance_authority;
+	 schema:rangeIncludes :provider;
+	 prov:wasAttributedTo "LLM".
+
+:isDesignatedFor rdf:type owl:ObjectProperty;
+	 rdfs:label "isDesignatedFor"@en;
+	 rdfs:comment "Market surveillance authorities are designated for AI systems used for law enforcement, border management, and justice."@en;
+	 schema:domainIncludes :market_surveillance_authority;
+	 schema:rangeIncludes :AI_system;
+	 prov:wasAttributedTo "LLM".
+
+:proposesJointActivitiesWith rdf:type owl:ObjectProperty;
+	 rdfs:label "proposesJointActivitiesWith"@en;
+	 rdfs:comment "Market surveillance authorities propose joint activities with the AI Office for compliance, identification of non-compliance, awareness, or guidance."@en;
+	 schema:domainIncludes :market_surveillance_authority;
+	 schema:rangeIncludes :AI_Office;
+	 prov:wasAttributedTo "LLM".
+
+:requestsInformationFrom rdf:type owl:ObjectProperty;
+	 rdfs:label "requestsInformationFrom"@en;
+	 rdfs:comment "Market surveillance authorities may request information from the AI Office regarding general-purpose AI models for AI system investigation."@en;
+	 schema:domainIncludes :market_surveillance_authority;
+	 schema:rangeIncludes :AI_Office;
+	 prov:wasAttributedTo "LLM".
+
+:monitors rdf:type owl:ObjectProperty;
+	 rdfs:label "monitors"@en;
+	 rdfs:comment "The AI Office monitors general-purpose AI models."@en;
+	 schema:domainIncludes :AI_Office;
+	 schema:rangeIncludes :AI_system,
+		:The_AI_Office_monitors_general-purpose_AI_models;
+	 prov:wasAttributedTo "LLM".
+
+:developsToolFor rdf:type owl:ObjectProperty;
+	 rdfs:label "developsToolFor"@en;
+	 rdfs:comment "The AI Office develops tools to facilitate deployers' compliance with obligations."@en;
+	 schema:domainIncludes :AI_Office;
+	 schema:rangeIncludes :deployer;
+	 prov:wasAttributedTo "LLM".
+
+:providesTemplateFor rdf:type owl:ObjectProperty;
+	 rdfs:label "providesTemplateFor"@en;
+	 rdfs:comment "The AI Office provides templates for summaries of training data for general-purpose AI models."@en;
+	 schema:domainIncludes :AI_Office;
+	 schema:rangeIncludes :training_data;
+	 prov:wasAttributedTo "LLM".
+
+:providesSupportFor rdf:type owl:ObjectProperty;
+	 rdfs:label "providesSupportFor"@en;
+	 rdfs:comment "The AI Office provides coordination support for joint investigations by market surveillance authorities."@en;
+	 schema:domainIncludes :AI_Office;
+	 prov:wasAttributedTo "LLM".
+
+:conductsEvaluationsOf rdf:type owl:ObjectProperty;
+	 rdfs:label "conductsEvaluationsOf"@en;
+	 rdfs:comment "The AI Office conducts evaluations of general-purpose AI models to assess compliance."@en;
+	 schema:domainIncludes :AI_Office;
+	 schema:rangeIncludes :general-purpose_AI_model;
+	 prov:wasAttributedTo "LLM".
+
+:investigates rdf:type owl:ObjectProperty;
+	 rdfs:label "investigates"@en;
+	 rdfs:comment "The AI Office investigates systemic risks in systemic risk general-purpose AI models."@en;
+	 schema:domainIncludes :AI_Office;
+	 schema:rangeIncludes :systemic_risk;
+	 prov:wasAttributedTo "LLM".
+
+:requestsAccessTo rdf:type owl:ObjectProperty;
+	 rdfs:label "requestsAccessTo"@en;
+	 rdfs:comment "The AI Office requests access to general-purpose AI models for evaluation purposes."@en;
+	 schema:domainIncludes :AI_Office;
+	 schema:rangeIncludes :general-purpose_AI_model;
+	 prov:wasAttributedTo "LLM".
+
+:requestsMeasuresFrom rdf:type owl:ObjectProperty;
+	 rdfs:label "requestsMeasuresFrom"@en;
+	 rdfs:comment "The AI Office requests providers to take measures for compliance or risk mitigation."@en;
+	 schema:domainIncludes :AI_Office;
+	 schema:rangeIncludes :provider;
+	 prov:wasAttributedTo "LLM".
+
+:requests rdf:type owl:ObjectProperty;
+	 rdfs:label "requests"@en;
+	 rdfs:comment "The AI Office can request the withdrawal of AI systems based on general-purpose AI models."@en;
+	 schema:domainIncludes :AI_Office;
+	 schema:rangeIncludes :withdrawal_of_an_AI_system,
+		:The_AI_Office_can_request_the_recall_of_AI_systems_based_on_general-purpose_AI_models;
+	 prov:wasAttributedTo "LLM".
+
+:alerts rdf:type owl:ObjectProperty;
+	 rdfs:label "alerts"@en;
+	 rdfs:comment "The scientific panel may provide a qualified alert to the AI Office regarding possible systemic risks."@en;
+	 schema:domainIncludes :AI_Scientific_Panel_Expert;
+	 schema:rangeIncludes :AI_Office;
+	 prov:wasAttributedTo "LLM".
+
+:advisesOnClassificationOf rdf:type owl:ObjectProperty;
+	 rdfs:label "advisesOnClassificationOf"@en;
+	 rdfs:comment "The scientific panel provides advice on the classification of systemic risk general-purpose AI models."@en;
+	 schema:domainIncludes :AI_Scientific_Panel_Expert;
+	 schema:rangeIncludes :Systemic_Risk_General-Purpose_AI_Model;
+	 prov:wasAttributedTo "LLM".
+
+:carriedOutBy rdf:type owl:ObjectProperty;
+	 rdfs:label "carriedOutBy"@en;
+	 rdfs:comment "Law enforcement activities are carried out by law enforcement authorities or on their behalf."@en;
+	 schema:domainIncludes :law_enforcement;
+	 schema:rangeIncludes :law_enforcement_authority;
+	 prov:wasAttributedTo "LLM".
+
+:incurs rdf:type owl:ObjectProperty;
+	 rdfs:label "incurs"@en;
+	 rdfs:comment "Non-compliance with prohibited AI practices triggers administrative fines."@en;
+	 schema:domainIncludes :Prohibited_AI_Practice;
+	 schema:rangeIncludes :Administrative_Fine_Prohibited_AI_Practice;
+	 prov:wasAttributedTo "LLM".
+
+:imposedOn rdf:type owl:ObjectProperty;
+	 rdfs:label "imposedOn"@en;
+	 rdfs:comment "Administrative fines for general-purpose AI model providers are imposed on the provider."@en;
+	 schema:domainIncludes :Administrative_Fine_GPAI_Provider;
+	 schema:rangeIncludes :provider;
+	 prov:wasAttributedTo "LLM".
+
+:assessesImpactOf rdf:type owl:ObjectProperty;
+	 rdfs:label "assessesImpactOf"@en;
+	 rdfs:comment "A fundamental rights impact assessment evaluates the potential impact of a high-risk AI system on fundamental rights."@en;
+	 schema:domainIncludes :Fundamental_Rights_Impact_Assessment;
+	 schema:rangeIncludes :AI_system;
+	 prov:wasAttributedTo "LLM".
+
+:presents rdf:type owl:ObjectProperty;
+	 rdfs:label "presents"@en;
+	 rdfs:comment "An AI system with a risk-presenting status presents risks to health, safety, or fundamental rights."@en;
+	 schema:domainIncludes :Risk-Presenting_AI_System_Status;
+	 schema:rangeIncludes :risk;
+	 prov:wasAttributedTo "LLM".
+
+:obtainedFrom rdf:type owl:ObjectProperty;
+	 rdfs:label "obtainedFrom"@en;
+	 rdfs:comment "The right to AI explanation is obtained from the deployer."@en;
+	 schema:domainIncludes :Right_to_AI_Explanation;
+	 schema:rangeIncludes :deployer;
+	 prov:wasAttributedTo "LLM".
+
+:concernsRoleOf rdf:type owl:ObjectProperty;
+	 rdfs:label "concernsRoleOf"@en;
+	 rdfs:comment "The right to AI explanation concerns the role of an AI system in decision-making."@en;
+	 schema:domainIncludes :Right_to_AI_Explanation;
+	 schema:rangeIncludes :AI_system;
+	 prov:wasAttributedTo "LLM".
+
+:allowsProcessingOf rdf:type owl:ObjectProperty;
+	 rdfs:label "allowsProcessingOf"@en;
+	 rdfs:comment "The AI regulatory sandbox allows for the processing of personal data under specific conditions for AI system development."@en;
+	 schema:domainIncludes :AI_Regulatory_Sandbox_Framework;
+	 schema:rangeIncludes :personal_data;
+	 prov:wasAttributedTo "LLM".
+
+:facilitatesDevelopmentOf rdf:type owl:ObjectProperty;
+	 rdfs:label "facilitatesDevelopmentOf"@en;
+	 rdfs:comment "The AI regulatory sandbox facilitates the development, training, testing, and validation of AI systems."@en;
+	 schema:domainIncludes :AI_Regulatory_Sandbox_Framework;
+	 schema:rangeIncludes :AI_system;
+	 prov:wasAttributedTo "LLM".
+
+:isGovernedBy rdf:type owl:ObjectProperty;
+	 rdfs:label "isGovernedBy"@en;
+	 rdfs:comment "An AI regulatory sandbox operates pursuant to a specific sandbox plan."@en;
+	 schema:domainIncludes :AI_Regulatory_Sandbox_Framework;
+	 schema:rangeIncludes :sandbox_plan;
+	 prov:wasAttributedTo "LLM".
+
+:mayInclude rdf:type owl:ObjectProperty;
+	 rdfs:label "mayInclude"@en;
+	 rdfs:comment "AI regulatory sandboxes may include testing in real-world conditions."@en;
+	 schema:domainIncludes :AI_Regulatory_Sandbox_Framework;
+	 schema:rangeIncludes :testing_in_real-world_conditions;
+	 prov:wasAttributedTo "LLM".
+
+:providesPriorityAccessTo rdf:type owl:ObjectProperty;
+	 rdfs:label "providesPriorityAccessTo"@en;
+	 rdfs:comment "AI regulatory sandboxes provide priority access to SMEs (providers) that fulfil eligibility conditions."@en;
+	 schema:domainIncludes :AI_Regulatory_Sandbox_Framework;
+	 schema:rangeIncludes :provider;
+	 prov:wasAttributedTo "LLM".
+
+:identifies rdf:type owl:ObjectProperty;
+	 rdfs:label "identifies"@en;
+	 rdfs:comment "Competent authorities identify risks within the AI regulatory sandbox."@en;
+	 schema:domainIncludes :AI_Regulatory_Sandbox_Framework;
+	 schema:rangeIncludes :risk;
+	 prov:wasAttributedTo "LLM".
+
+:enablesEvaluationBy rdf:type owl:ObjectProperty;
+	 rdfs:label "enablesEvaluationBy"@en;
+	 rdfs:comment "The post-market monitoring system enables the provider to evaluate continuous compliance of AI systems."@en;
+	 schema:domainIncludes :post-market_monitoring_system;
+	 schema:rangeIncludes :provider;
+	 prov:wasAttributedTo "LLM".
+
+:collectsDataFrom rdf:type owl:ObjectProperty;
+	 rdfs:label "collectsDataFrom"@en;
+	 rdfs:comment "The post-market monitoring system collects data from deployers on AI system performance."@en;
+	 schema:domainIncludes :post-market_monitoring_system;
+	 schema:rangeIncludes :deployer;
+	 prov:wasAttributedTo "LLM".
+
+:monitorsUseOf rdf:type owl:ObjectProperty;
+	 rdfs:label "monitorsUseOf"@en;
+	 rdfs:comment "The post-market monitoring system monitors the use of AI systems."@en;
+	 schema:domainIncludes :post-market_monitoring_system;
+	 schema:rangeIncludes :AI_system;
+	 prov:wasAttributedTo "LLM".
+
+:designates rdf:type owl:ObjectProperty;
+	 rdfs:label "designates"@en;
+	 rdfs:comment "The AI Office may designate a general-purpose AI model as presenting systemic risks."@en;
+	 schema:domainIncludes :AI_Office;
+	 schema:rangeIncludes :Systemic_Risk_General-Purpose_AI_Model;
+	 prov:wasAttributedTo "LLM".
+
+#######################
+# SubClassOf
+########################:provider rdfs:subClassOf :operator. 
+
+:deployer rdfs:subClassOf :operator. 
+
+:authorised_representative rdfs:subClassOf :operator. 
+
+:importer rdfs:subClassOf :operator. 
+
+:distributor rdfs:subClassOf :operator. 
+
+:Public_Service_Deployer rdfs:subClassOf :deployer. 
+
+:notifying_authority rdfs:subClassOf :national_competent_authority. 
+
+:market_surveillance_authority rdfs:subClassOf :national_competent_authority. 
+
+:notified_body rdfs:subClassOf :conformity_assessment_body. 
+
+:Deemed_Provider rdfs:subClassOf :provider. 
+
+:emotion_recognition_system rdfs:subClassOf :AI_system. 
+
+:biometric_categorisation_system rdfs:subClassOf :AI_system. 
+
+:remote_biometric_identification_system rdfs:subClassOf :AI_system. 
+
+:real-time_remote_biometric_identification_system rdfs:subClassOf :remote_biometric_identification_system. 
+
+:post-remote_biometric_identification_system rdfs:subClassOf :remote_biometric_identification_system. 
+
+:general-purpose_AI_system rdfs:subClassOf :AI_system. 
+
+:Synthetic_Content_AI_System rdfs:subClassOf :AI_system. 
+
+:Systemic_Risk_General-Purpose_AI_Model rdfs:subClassOf :general-purpose_AI_model. 
+
+:biometric_data rdfs:subClassOf :personal_data. 
+
+:special_categories_of_personal_data rdfs:subClassOf :personal_data. 
+
+:systemic_risk rdfs:subClassOf :risk. 
+
+:Real-World_Testing_Consent_Subject rdfs:subClassOf :informed_consent. 
+
+:AI_regulatory_sandbox rdfs:subClassOf :AI_Regulatory_Sandbox_Framework. 
+

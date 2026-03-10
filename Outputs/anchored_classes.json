@@ -1,0 +1,450 @@
+{
+    "0": {
+        "prop": "equivalentClass",
+        "sub": "AI system",
+        "obj": "AI System",
+        "iri": "https://w3id.org/airo#AISystem",
+        "justification": "The definition of 'AI system' from the document is identical to the definition of 'AI System' in the AIRO ontology."
+    },
+    "1": {
+        "prop": "equivalentClass",
+        "sub": "risk",
+        "obj": "Risk",
+        "iri": "https://w3id.org/airo#Risk",
+        "justification": "The extracted definition of 'risk' (combination of probability of harm and severity) aligns directly with the core concept of 'Risk' in AIRO, which is expressed in terms of likelihood and severity."
+    },
+    "2": {
+        "prop": "equivalentClass",
+        "sub": "provider",
+        "obj": "AI Provider",
+        "iri": "https://w3id.org/airo#AIProvider",
+        "justification": "The definition of 'provider' from the document is identical to the definition of 'AI Provider' in the AIRO ontology."
+    },
+    "3": {
+        "prop": "equivalentClass",
+        "sub": "deployer",
+        "obj": "AI Deployer",
+        "iri": "https://w3id.org/airo#AIDeployer",
+        "justification": "The definition of 'deployer' from the document is identical to the definition of 'AI Deployer' in the AIRO ontology."
+    },
+    "4": {
+        "prop": "subClassOf",
+        "sub": "authorised representative",
+        "obj": "AI Operator",
+        "iri": "https://w3id.org/airo#AIOperator",
+        "justification": "An 'authorised representative' is explicitly listed as a type of 'AI Operator' in the AIRO definition of 'AI Operator'."
+    },
+    "5": {
+        "prop": "subClassOf",
+        "sub": "importer",
+        "obj": "AI Operator",
+        "iri": "https://w3id.org/airo#AIOperator",
+        "justification": "An 'importer' is explicitly listed as a type of 'AI Operator' in the AIRO definition of 'AI Operator'."
+    },
+    "6": {
+        "prop": "subClassOf",
+        "sub": "distributor",
+        "obj": "AI Operator",
+        "iri": "https://w3id.org/airo#AIOperator",
+        "justification": "A 'distributor' is explicitly listed as a type of 'AI Operator' in the AIRO definition of 'AI Operator'."
+    },
+    "7": {
+        "prop": "equivalentClass",
+        "sub": "operator",
+        "obj": "AI Operator",
+        "iri": "https://w3id.org/airo#AIOperator",
+        "justification": "The definition of 'operator' from the document is identical to the definition of 'AI Operator' in the AIRO ontology."
+    },
+    "8": {
+        "prop": "subClassOf",
+        "sub": "intended purpose",
+        "obj": "Purpose",
+        "iri": "https://w3id.org/airo#Purpose",
+        "justification": "The 'intended purpose' of an AI system is a specific kind of 'Purpose' as defined in AIRO, narrowed to the end goal for an AI system by its provider."
+    },
+    "9": {
+        "prop": "subClassOf",
+        "sub": "reasonably foreseeable misuse",
+        "obj": "Misuse",
+        "iri": "https://w3id.org/airo#Misuse",
+        "justification": "The 'reasonably foreseeable misuse' is a specific type of 'Misuse' that explicitly includes foreseeability based on human behavior or system interaction."
+    },
+    "10": {
+        "prop": "equivalentClass",
+        "sub": "safety component",
+        "obj": "Safety Component",
+        "iri": "https://w3id.org/vair#SafetyComponent",
+        "justification": "The definition of 'safety component' from the document is identical to the definition of 'Safety Component' in the VAIR ontology."
+    },
+    "11": {
+        "prop": "equivalentClass",
+        "sub": "instructions for use",
+        "obj": "Instruction For Use",
+        "iri": "https://w3id.org/vair#InstructionForUse",
+        "justification": "The definition of 'instructions for use' from the document is identical to the definition of 'Instruction For Use' in the VAIR ontology."
+    },
+    "12": {
+        "prop": "subClassOf",
+        "sub": "recall of an AI system",
+        "obj": "Mitigation Measure",
+        "iri": "https://w3id.org/vair#MitigationMeasure",
+        "justification": "A 'recall of an AI system' is a measure taken to address risks, thus falling under the broader category of 'Mitigation Measure'."
+    },
+    "13": {
+        "prop": "subClassOf",
+        "sub": "withdrawal of an AI system",
+        "obj": "Mitigation Measure",
+        "iri": "https://w3id.org/vair#MitigationMeasure",
+        "justification": "A 'withdrawal of an AI system' is a measure taken to prevent risks in the supply chain, thus falling under the broader category of 'Mitigation Measure'."
+    },
+    "14": {
+        "prop": "subClassOf",
+        "sub": "notifying authority",
+        "obj": "Public Authority",
+        "iri": "https://w3id.org/vair#PublicAuthority",
+        "justification": "A 'notifying authority' is a specific type of 'Public Authority' with defined responsibilities related to conformity assessment bodies."
+    },
+    "15": {
+        "prop": "subClassOf",
+        "sub": "conformity assessment",
+        "obj": "Assessment",
+        "iri": "https://w3id.org/vair#Assessment",
+        "justification": "A 'conformity assessment' is a specific process of demonstrating compliance, making it a specialized form of 'Assessment'."
+    },
+    "16": {
+        "prop": "subClassOf",
+        "sub": "conformity assessment body",
+        "obj": "Stakeholder",
+        "iri": "https://w3id.org/airo#Stakeholder",
+        "justification": "A 'conformity assessment body' is an entity that performs activities affecting AI systems, thus making it a 'Stakeholder'."
+    },
+    "17": {
+        "prop": "subClassOf",
+        "sub": "notified body",
+        "obj": "Stakeholder",
+        "iri": "https://w3id.org/airo#Stakeholder",
+        "justification": "A 'notified body' is a specific type of 'conformity assessment body', which itself is a 'Stakeholder'."
+    },
+    "18": {
+        "prop": "subClassOf",
+        "sub": "substantial modification",
+        "obj": "Change",
+        "iri": "https://w3id.org/airo#Change",
+        "justification": "A 'substantial modification' is a specific type of 'Change' to an AI system that affects its compliance or intended purpose."
+    },
+    "19": {
+        "prop": "subClassOf",
+        "sub": "market surveillance authority",
+        "obj": "Public Authority",
+        "iri": "https://w3id.org/vair#PublicAuthority",
+        "justification": "A 'market surveillance authority' is a specific type of 'Public Authority' with responsibilities for market oversight."
+    },
+    "20": {
+        "prop": "subClassOf",
+        "sub": "harmonised standard",
+        "obj": "Standard",
+        "iri": "https://w3id.org/airo#Standard",
+        "justification": "A 'harmonised standard' is a specific type of 'Standard' that facilitates compliance with Union legislation."
+    },
+    "21": {
+        "prop": "subClassOf",
+        "sub": "common specification",
+        "obj": "Standard",
+        "iri": "https://w3id.org/airo#Standard",
+        "justification": "A 'common specification' serves a similar function to a standard by providing technical means for compliance, making it a type of 'Standard' in a broader sense."
+    },
+    "22": {
+        "prop": "subClassOf",
+        "sub": "training data",
+        "obj": "Data",
+        "iri": "https://w3id.org/airo#Data",
+        "justification": "'Training data' is a specific category of 'Data' used for training AI systems."
+    },
+    "23": {
+        "prop": "subClassOf",
+        "sub": "validation data",
+        "obj": "Data",
+        "iri": "https://w3id.org/airo#Data",
+        "justification": "'Validation data' is a specific category of 'Data' used for evaluating and tuning trained AI systems."
+    },
+    "24": {
+        "prop": "subClassOf",
+        "sub": "validation data set",
+        "obj": "Data",
+        "iri": "https://w3id.org/airo#Data",
+        "justification": "A 'validation data set' is a specific collection of 'Data' used for validation purposes."
+    },
+    "25": {
+        "prop": "subClassOf",
+        "sub": "testing data",
+        "obj": "Data",
+        "iri": "https://w3id.org/airo#Data",
+        "justification": "'Testing data' is a specific category of 'Data' used for independent evaluation of AI systems."
+    },
+    "26": {
+        "prop": "subClassOf",
+        "sub": "input data",
+        "obj": "Input",
+        "iri": "https://w3id.org/airo#Input",
+        "justification": "'Input data' is a specific form of 'Input' provided to an AI system."
+    },
+    "27": {
+        "prop": "equivalentClass",
+        "sub": "biometric identification",
+        "obj": "Biometric Identification",
+        "iri": "https://w3id.org/vair#BiometricIdentification",
+        "justification": "The definition of 'biometric identification' from the document is conceptually identical to the definition of 'Biometric Identification' in the VAIR ontology, with VAIR providing more examples."
+    },
+    "28": {
+        "prop": "subClassOf",
+        "sub": "sensitive operational data",
+        "obj": "Data",
+        "iri": "https://w3id.org/airo#Data",
+        "justification": "'Sensitive operational data' is a specific type of 'Data' related to criminal proceedings."
+    },
+    "29": {
+        "prop": "subClassOf",
+        "sub": "emotion recognition system",
+        "obj": "AI System",
+        "iri": "https://w3id.org/airo#AISystem",
+        "justification": "An 'emotion recognition system' is a specific type of 'AI System' designed for identifying emotions or intentions."
+    },
+    "30": {
+        "prop": "subClassOf",
+        "sub": "biometric categorisation system",
+        "obj": "AI System",
+        "iri": "https://w3id.org/airo#AISystem",
+        "justification": "A 'biometric categorisation system' is a specific type of 'AI System' for assigning persons to categories based on biometric data."
+    },
+    "31": {
+        "prop": "subClassOf",
+        "sub": "remote biometric identification system",
+        "obj": "AI System",
+        "iri": "https://w3id.org/airo#AISystem",
+        "justification": "A 'remote biometric identification system' is a specific type of 'AI System' for identifying persons at a distance without active involvement."
+    },
+    "32": {
+        "prop": "subClassOf",
+        "sub": "real-time remote biometric identification system",
+        "obj": "AI System",
+        "iri": "https://w3id.org/airo#AISystem",
+        "justification": "A 'real-time remote biometric identification system' is a specific type of 'AI System' that performs remote biometric identification without significant delay."
+    },
+    "33": {
+        "prop": "subClassOf",
+        "sub": "post-remote biometric identification system",
+        "obj": "AI System",
+        "iri": "https://w3id.org/airo#AISystem",
+        "justification": "A 'post-remote biometric identification system' is a specific type of 'AI System' for remote biometric identification, excluding real-time."
+    },
+    "34": {
+        "prop": "equivalentClass",
+        "sub": "publicly accessible space",
+        "obj": "Publicly Accessible Space",
+        "iri": "https://w3id.org/vair#PubliclyAccessibleSpace",
+        "justification": "The definition of 'publicly accessible space' from the document is identical to the definition of 'Publicly Accessible Space' in the VAIR ontology."
+    },
+    "35": {
+        "prop": "equivalentClass",
+        "sub": "law enforcement authority",
+        "obj": "Law Enforcement Authority",
+        "iri": "https://w3id.org/vair#LawEnforcementAuthority",
+        "justification": "The definition of 'law enforcement authority' from the document is identical to the definition of 'Law Enforcement Authority' in the VAIR ontology."
+    },
+    "36": {
+        "prop": "subClassOf",
+        "sub": "law enforcement",
+        "obj": "Law Enforcement",
+        "iri": "https://w3id.org/vair#LawEnforcement",
+        "justification": "The extracted definition of 'law enforcement' specifies activities carried out by law enforcement authorities, making it a specific instance of the broader 'Law Enforcement' concept."
+    },
+    "37": {
+        "prop": "subClassOf",
+        "sub": "AI Office",
+        "obj": "EU Office",
+        "iri": "https://w3id.org/vair#EUOffice",
+        "justification": "The 'AI Office' is a specific function within the Commission, which is an 'EU Office'."
+    },
+    "38": {
+        "prop": "subClassOf",
+        "sub": "national competent authority",
+        "obj": "Public Authority",
+        "iri": "https://w3id.org/vair#PublicAuthority",
+        "justification": "A 'national competent authority' is defined as a notifying authority or a market surveillance authority, both of which are specific types of 'Public Authority'."
+    },
+    "39": {
+        "prop": "subClassOf",
+        "sub": "personal data",
+        "obj": "Data",
+        "iri": "https://w3id.org/airo#Data",
+        "justification": "'Personal data' is a specific type of 'Data' as defined by GDPR."
+    },
+    "40": {
+        "prop": "subClassOf",
+        "sub": "non-personal data",
+        "obj": "Data",
+        "iri": "https://w3id.org/airo#Data",
+        "justification": "'Non-personal data' is a specific type of 'Data', defined as data other than personal data."
+    },
+    "41": {
+        "prop": "equivalentClass",
+        "sub": "profiling",
+        "obj": "Profiling",
+        "iri": "https://w3id.org/vair#Profiling",
+        "justification": "The definition of 'profiling' from the document (referencing GDPR) is identical to the definition of 'Profiling' in the VAIR ontology."
+    },
+    "42": {
+        "prop": "subClassOf",
+        "sub": "real-world testing plan",
+        "obj": "Documentation",
+        "iri": "https://w3id.org/airo#Documentation",
+        "justification": "A 'real-world testing plan' is a document, and thus a specific type of 'Documentation'."
+    },
+    "43": {
+        "prop": "subClassOf",
+        "sub": "sandbox plan",
+        "obj": "Documentation",
+        "iri": "https://w3id.org/airo#Documentation",
+        "justification": "A 'sandbox plan' is a document, and thus a specific type of 'Documentation'."
+    },
+    "44": {
+        "prop": "subClassOf",
+        "sub": "subject",
+        "obj": "AI Subject",
+        "iri": "https://w3id.org/airo#AISubject",
+        "justification": "A 'subject' in real-world testing is a natural person impacted by the AI system's use, making them an 'AI Subject'."
+    },
+    "45": {
+        "prop": "subClassOf",
+        "sub": "deep fake",
+        "obj": "Output",
+        "iri": "https://w3id.org/airo#Output",
+        "justification": "A 'deep fake' is a specific type of AI-generated or manipulated content, which is a form of 'Output' from an AI system."
+    },
+    "46": {
+        "prop": "equivalentClass",
+        "sub": "critical infrastructure",
+        "obj": "Critical Infrastructure",
+        "iri": "https://w3id.org/vair#CriticalInfrastructure",
+        "justification": "The definition of 'critical infrastructure' from the document (referencing EU Directive) aligns with the definition in the VAIR ontology."
+    },
+    "47": {
+        "prop": "equivalentClass",
+        "sub": "general-purpose AI model",
+        "obj": "General Purpose AI Model",
+        "iri": "https://w3id.org/airo#GPAIModel",
+        "justification": "The definition of 'general-purpose AI model' from the document is essentially identical to the definition of 'General Purpose AI Model' in the AIRO ontology, with the extracted one adding a specific exclusion clause for regulatory scope."
+    },
+    "48": {
+        "prop": "subClassOf",
+        "sub": "high-impact capabilities",
+        "obj": "AI Capability",
+        "iri": "https://w3id.org/airo#AICapability",
+        "justification": "'High-impact capabilities' are a specific, advanced type of 'AI Capability'."
+    },
+    "49": {
+        "prop": "subClassOf",
+        "sub": "systemic risk",
+        "obj": "Risk",
+        "iri": "https://w3id.org/airo#Risk",
+        "justification": "'Systemic risk' is a specific type of 'Risk' characterized by its source (GPAI models) and its widespread potential impact."
+    },
+    "50": {
+        "prop": "subClassOf",
+        "sub": "general-purpose AI system",
+        "obj": "AI System",
+        "iri": "https://w3id.org/airo#AISystem",
+        "justification": "A 'general-purpose AI system' is a specific type of 'AI System' based on a general-purpose AI model."
+    },
+    "51": {
+        "prop": "subClassOf",
+        "sub": "downstream provider",
+        "obj": "AI Provider",
+        "iri": "https://w3id.org/airo#AIProvider",
+        "justification": "A 'downstream provider' is a specific type of 'AI Provider' that integrates an AI model."
+    },
+    "52": {
+        "prop": "subClassOf",
+        "sub": "Affected Person (AI System Use)",
+        "obj": "AI Subject",
+        "iri": "https://w3id.org/airo#AISubject",
+        "justification": "An 'Affected Person' is a natural person impacted by an AI system, making them a specific type of 'AI Subject'."
+    },
+    "53": {
+        "prop": "subClassOf",
+        "sub": "Administrative Fine (GPAI Provider)",
+        "obj": "Consequence",
+        "iri": "https://w3id.org/airo#Consequence",
+        "justification": "An 'Administrative Fine' is a direct outcome or penalty for non-compliance, fitting the definition of a 'Consequence'."
+    },
+    "54": {
+        "prop": "subClassOf",
+        "sub": "AI Component Supplier",
+        "obj": "Stakeholder",
+        "iri": "https://w3id.org/airo#Stakeholder",
+        "justification": "An 'AI Component Supplier' is a third party involved in the AI ecosystem, making them a 'Stakeholder'."
+    },
+    "55": {
+        "prop": "subClassOf",
+        "sub": "Systemic Risk General-Purpose AI Model",
+        "obj": "General Purpose AI Model",
+        "iri": "https://w3id.org/airo#GPAIModel",
+        "justification": "A 'Systemic Risk General-Purpose AI Model' is a specific classification of a 'General Purpose AI Model' that poses significant risks."
+    },
+    "56": {
+        "prop": "subClassOf",
+        "sub": "Right to AI Explanation",
+        "obj": "Right",
+        "iri": "https://w3id.org/vair#Right",
+        "justification": "The 'Right to AI Explanation' is a specific fundamental right related to AI systems, making it a type of 'Right'."
+    },
+    "57": {
+        "prop": "subClassOf",
+        "sub": "Public Service Deployer",
+        "obj": "AI Deployer",
+        "iri": "https://w3id.org/airo#AIDeployer",
+        "justification": "A 'Public Service Deployer' is a specific type of 'AI Deployer' that operates in the public sector or provides public services."
+    },
+    "58": {
+        "prop": "subClassOf",
+        "sub": "Synthetic Content AI System",
+        "obj": "AI System",
+        "iri": "https://w3id.org/airo#AISystem",
+        "justification": "A 'Synthetic Content AI System' is a specific type of 'AI System' that generates or manipulates content."
+    },
+    "59": {
+        "prop": "subClassOf",
+        "sub": "Fundamental Rights Impact Assessment",
+        "obj": "Assessment",
+        "iri": "https://w3id.org/vair#Assessment",
+        "justification": "A 'Fundamental Rights Impact Assessment' is a mandatory procedural step involving evaluation, making it a specific type of 'Assessment'."
+    },
+    "60": {
+        "prop": "subClassOf",
+        "sub": "Administrative Fine (Prohibited AI Practice)",
+        "obj": "Consequence",
+        "iri": "https://w3id.org/airo#Consequence",
+        "justification": "An 'Administrative Fine' for prohibited practices is a direct outcome or penalty, fitting the definition of a 'Consequence'."
+    },
+    "61": {
+        "prop": "subClassOf",
+        "sub": "AI Scientific Panel Expert",
+        "obj": "Stakeholder",
+        "iri": "https://w3id.org/airo#Stakeholder",
+        "justification": "An 'AI Scientific Panel Expert' is an individual providing advice and is affected by or affects AI decisions, thus a 'Stakeholder'."
+    },
+    "62": {
+        "prop": "subClassOf",
+        "sub": "Union Market Operator (Third Country)",
+        "obj": "AI Operator",
+        "iri": "https://w3id.org/airo#AIOperator",
+        "justification": "A 'Union Market Operator (Third Country)' is a specific functional role that falls under the broader category of 'AI Operator'."
+    },
+    "63": {
+        "prop": "subClassOf",
+        "sub": "Deemed Provider",
+        "obj": "AI Provider",
+        "iri": "https://w3id.org/airo#AIProvider",
+        "justification": "A 'Deemed Provider' is a legal status where an entity assumes the obligations of an 'AI Provider', making it a specific type of provider in the regulatory context."
+    }
+}

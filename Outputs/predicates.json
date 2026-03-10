@@ -1,0 +1,1486 @@
+{
+    "0": {
+        "label": "receives",
+        "description": "An AI system takes in input data to generate outputs.",
+        "domain": "AI system",
+        "range": "input data",
+        "source": "Generated"
+    },
+    "1": {
+        "label": "uses",
+        "description": "Emotion recognition systems, biometric categorisation systems, and remote biometric identification systems use biometric data for their operations.",
+        "domain": "AI system",
+        "range": "biometric data",
+        "source": "Generated"
+    },
+    "2": {
+        "label": "isA",
+        "description": "A general-purpose AI system is a specific type of AI system.",
+        "domain": "general-purpose AI system",
+        "range": "AI system",
+        "source": "Generated"
+    },
+    "3": {
+        "label": "isA",
+        "description": "An emotion recognition system is a specific type of AI system.",
+        "domain": "emotion recognition system",
+        "range": "AI system",
+        "source": "Generated"
+    },
+    "4": {
+        "label": "isA",
+        "description": "A biometric categorisation system is a specific type of AI system.",
+        "domain": "biometric categorisation system",
+        "range": "AI system",
+        "source": "Generated"
+    },
+    "5": {
+        "label": "isA",
+        "description": "A remote biometric identification system is a specific type of AI system.",
+        "domain": "remote biometric identification system",
+        "range": "AI system",
+        "source": "Generated"
+    },
+    "6": {
+        "label": "isA",
+        "description": "A real-time remote biometric identification system is a specific type of remote biometric identification system.",
+        "domain": "real-time remote biometric identification system",
+        "range": "remote biometric identification system",
+        "source": "Generated"
+    },
+    "7": {
+        "label": "isA",
+        "description": "A post-remote biometric identification system is a specific type of remote biometric identification system.",
+        "domain": "post-remote biometric identification system",
+        "range": "remote biometric identification system",
+        "source": "Generated"
+    },
+    "8": {
+        "label": "poses",
+        "description": "An AI system can pose risks to health, safety, or fundamental rights.",
+        "domain": "AI system",
+        "range": "risk",
+        "source": "Generated"
+    },
+    "9": {
+        "label": "isUsedAs",
+        "description": "An AI system can be intended for use as a safety component of a product.",
+        "domain": "AI system",
+        "range": "safety component",
+        "source": "Generated"
+    },
+    "10": {
+        "label": "accompaniedBy",
+        "description": "High-risk AI systems are accompanied by instructions for use.",
+        "domain": "AI system",
+        "range": "instructions for use",
+        "source": "Generated"
+    },
+    "11": {
+        "label": "canBe",
+        "description": "An AI system's placing on the market, putting into service, or use can constitute a prohibited AI practice.",
+        "domain": "AI system",
+        "range": "Prohibited AI Practice",
+        "source": "Generated"
+    },
+    "12": {
+        "label": "canBe",
+        "description": "An AI system can be understood to present a risk to health, safety, or fundamental rights, leading to this status.",
+        "domain": "AI system",
+        "range": "Risk-Presenting AI System Status",
+        "source": "Generated"
+    },
+    "13": {
+        "label": "generates",
+        "description": "An AI system, specifically a synthetic content AI system, can generate or manipulate content constituting a deep fake.",
+        "domain": "Synthetic Content AI System",
+        "range": "deep fake",
+        "source": "Generated"
+    },
+    "14": {
+        "label": "trainedWith",
+        "description": "AI systems making use of training techniques are developed based on training data.",
+        "domain": "AI system",
+        "range": "training data",
+        "source": "Generated"
+    },
+    "15": {
+        "label": "evaluatedWith",
+        "description": "AI systems are evaluated using validation data.",
+        "domain": "AI system",
+        "range": "validation data",
+        "source": "Generated"
+    },
+    "16": {
+        "label": "evaluatedWith",
+        "description": "AI systems are evaluated using testing data.",
+        "domain": "AI system",
+        "range": "testing data",
+        "source": "Generated"
+    },
+    "17": {
+        "label": "canBeIntegratedInto",
+        "description": "A general-purpose AI model can be integrated into a variety of downstream AI systems or applications.",
+        "domain": "general-purpose AI model",
+        "range": "AI system",
+        "source": "Generated"
+    },
+    "18": {
+        "label": "canBeClassifiedAs",
+        "description": "A general-purpose AI model can be classified as having systemic risk if it meets certain conditions.",
+        "domain": "general-purpose AI model",
+        "range": "Systemic Risk General-Purpose AI Model",
+        "source": "Generated"
+    },
+    "19": {
+        "label": "possesses",
+        "description": "A general-purpose AI model classified with systemic risk possesses high-impact capabilities.",
+        "domain": "Systemic Risk General-Purpose AI Model",
+        "range": "high-impact capabilities",
+        "source": "Generated"
+    },
+    "20": {
+        "label": "isA",
+        "description": "Biometric data is a type of personal data.",
+        "domain": "biometric data",
+        "range": "personal data",
+        "source": "Generated"
+    },
+    "21": {
+        "label": "isA",
+        "description": "Special categories of personal data are a subset of personal data.",
+        "domain": "special categories of personal data",
+        "range": "personal data",
+        "source": "Generated"
+    },
+    "22": {
+        "label": "isOtherThan",
+        "description": "Non-personal data is distinct from personal data.",
+        "domain": "non-personal data",
+        "range": "personal data",
+        "source": "Generated"
+    },
+    "23": {
+        "label": "isA",
+        "description": "Systemic risk is a specific type of risk, typically associated with high-impact capabilities of general-purpose AI models.",
+        "domain": "systemic risk",
+        "range": "risk",
+        "source": "Generated"
+    },
+    "24": {
+        "label": "isA",
+        "description": "A provider is defined as a type of operator.",
+        "domain": "provider",
+        "range": "operator",
+        "source": "Generated"
+    },
+    "25": {
+        "label": "isA",
+        "description": "A deployer is defined as a type of operator.",
+        "domain": "deployer",
+        "range": "operator",
+        "source": "Generated"
+    },
+    "26": {
+        "label": "isA",
+        "description": "An authorised representative is defined as a type of operator.",
+        "domain": "authorised representative",
+        "range": "operator",
+        "source": "Generated"
+    },
+    "27": {
+        "label": "isA",
+        "description": "An importer is defined as a type of operator.",
+        "domain": "importer",
+        "range": "operator",
+        "source": "Generated"
+    },
+    "28": {
+        "label": "isA",
+        "description": "A distributor is defined as a type of operator.",
+        "domain": "distributor",
+        "range": "operator",
+        "source": "Generated"
+    },
+    "29": {
+        "label": "includes",
+        "description": "A national competent authority includes a notifying authority.",
+        "domain": "national competent authority",
+        "range": "notifying authority",
+        "source": "Generated"
+    },
+    "30": {
+        "label": "includes",
+        "description": "A national competent authority includes a market surveillance authority.",
+        "domain": "national competent authority",
+        "range": "market surveillance authority",
+        "source": "Generated"
+    },
+    "31": {
+        "label": "isA",
+        "description": "A notified body is a type of conformity assessment body that has been officially notified.",
+        "domain": "notified body",
+        "range": "conformity assessment body",
+        "source": "Generated"
+    },
+    "32": {
+        "label": "develops",
+        "description": "A provider develops an AI system.",
+        "domain": "provider",
+        "range": "AI system",
+        "source": "Generated"
+    },
+    "33": {
+        "label": "develops",
+        "description": "A provider develops a general-purpose AI model.",
+        "domain": "provider",
+        "range": "general-purpose AI model",
+        "source": "Generated"
+    },
+    "34": {
+        "label": "placesOnTheMarket",
+        "description": "A provider places an AI system on the market.",
+        "domain": "provider",
+        "range": "AI system",
+        "source": "Generated"
+    },
+    "35": {
+        "label": "placesOnTheMarket",
+        "description": "A provider places a general-purpose AI model on the market.",
+        "domain": "provider",
+        "range": "general-purpose AI model",
+        "source": "Generated"
+    },
+    "36": {
+        "label": "putsIntoService",
+        "description": "A provider puts an AI system into service.",
+        "domain": "provider",
+        "range": "AI system",
+        "source": "Generated"
+    },
+    "37": {
+        "label": "provides",
+        "description": "A provider provides instructions for use for an AI system.",
+        "domain": "provider",
+        "range": "instructions for use",
+        "source": "Generated"
+    },
+    "38": {
+        "label": "establishes",
+        "description": "A provider establishes a post-market monitoring system for high-risk AI systems.",
+        "domain": "provider",
+        "range": "post-market monitoring system",
+        "source": "Generated"
+    },
+    "39": {
+        "label": "ensuresComplianceOf",
+        "description": "Providers ensure their high-risk AI systems are compliant with requirements.",
+        "domain": "provider",
+        "range": "AI system",
+        "source": "Generated"
+    },
+    "40": {
+        "label": "ensuresUndergoes",
+        "description": "Providers ensure their high-risk AI system undergoes conformity assessment.",
+        "domain": "provider",
+        "range": "conformity assessment",
+        "source": "Generated"
+    },
+    "41": {
+        "label": "affixes",
+        "description": "A provider affixes the CE marking to an AI system.",
+        "domain": "provider",
+        "range": "CE marking",
+        "source": "Generated"
+    },
+    "42": {
+        "label": "demonstratesConformityTo",
+        "description": "Providers demonstrate AI system conformity to national competent authorities upon request.",
+        "domain": "provider",
+        "range": "national competent authority",
+        "source": "Generated"
+    },
+    "43": {
+        "label": "keepsAtDisposalOf",
+        "description": "Providers keep documentation (e.g., technical documentation, quality management system documentation) at the disposal of national competent authorities.",
+        "domain": "provider",
+        "range": "national competent authority",
+        "source": "Generated"
+    },
+    "44": {
+        "label": "informs",
+        "description": "Providers inform distributors of AI system non-conformity or risks.",
+        "domain": "provider",
+        "range": "distributor",
+        "source": "Generated"
+    },
+    "45": {
+        "label": "informs",
+        "description": "Providers inform deployers of AI system non-conformity or risks.",
+        "domain": "provider",
+        "range": "deployer",
+        "source": "Generated"
+    },
+    "46": {
+        "label": "informs",
+        "description": "Providers inform authorised representatives of AI system non-conformity or risks.",
+        "domain": "provider",
+        "range": "authorised representative",
+        "source": "Generated"
+    },
+    "47": {
+        "label": "informs",
+        "description": "Providers inform importers of AI system non-conformity or risks.",
+        "domain": "provider",
+        "range": "importer",
+        "source": "Generated"
+    },
+    "48": {
+        "label": "takesCorrectiveActionsFor",
+        "description": "Providers take corrective actions for non-compliant AI systems.",
+        "domain": "provider",
+        "range": "AI system",
+        "source": "Generated"
+    },
+    "49": {
+        "label": "initiates",
+        "description": "Providers initiate the withdrawal of non-compliant AI systems from the market.",
+        "domain": "provider",
+        "range": "withdrawal of an AI system",
+        "source": "Generated"
+    },
+    "50": {
+        "label": "initiates",
+        "description": "Providers initiate the recall of non-compliant AI systems.",
+        "domain": "provider",
+        "range": "recall of an AI system",
+        "source": "Generated"
+    },
+    "51": {
+        "label": "informs",
+        "description": "Providers inform market surveillance authorities of AI system risks or non-compliance.",
+        "domain": "provider",
+        "range": "market surveillance authority",
+        "source": "Generated"
+    },
+    "52": {
+        "label": "informs",
+        "description": "Providers inform notified bodies of AI system risks or non-compliance.",
+        "domain": "provider",
+        "range": "notified body",
+        "source": "Generated"
+    },
+    "53": {
+        "label": "grantsAccessTo",
+        "description": "Providers grant access to AI system logs to national competent authorities upon request.",
+        "domain": "provider",
+        "range": "national competent authority",
+        "source": "Generated"
+    },
+    "54": {
+        "label": "appoints",
+        "description": "Providers established in third countries appoint an authorised representative in the Union.",
+        "domain": "provider",
+        "range": "authorised representative",
+        "source": "Generated"
+    },
+    "55": {
+        "label": "mandates",
+        "description": "A provider gives a written mandate to its authorised representative to perform obligations.",
+        "domain": "provider",
+        "range": "authorised representative",
+        "source": "Generated"
+    },
+    "56": {
+        "label": "cooperatesWith",
+        "description": "An initial provider cooperates with a new deemed provider for AI system compliance.",
+        "domain": "provider",
+        "range": "Deemed Provider",
+        "source": "Generated"
+    },
+    "57": {
+        "label": "providesAssistanceTo",
+        "description": "An initial provider provides necessary information and technical assistance to a new deemed provider for AI system compliance.",
+        "domain": "provider",
+        "range": "Deemed Provider",
+        "source": "Generated"
+    },
+    "58": {
+        "label": "contractsWith",
+        "description": "A provider of a high-risk AI system contracts with a third party that supplies components, tools, or services.",
+        "domain": "provider",
+        "range": "AI Component Supplier",
+        "source": "Generated"
+    },
+    "59": {
+        "label": "informs",
+        "description": "Providers inform affected persons of direct interaction with an AI system.",
+        "domain": "provider",
+        "range": "Affected Person (AI System Use)",
+        "source": "Generated"
+    },
+    "60": {
+        "label": "marksOutputsOf",
+        "description": "Providers of synthetic content AI systems mark their outputs as artificially generated or manipulated.",
+        "domain": "provider",
+        "range": "Synthetic Content AI System",
+        "source": "Generated"
+    },
+    "61": {
+        "label": "notifies",
+        "description": "Providers of general-purpose AI models notify the AI Office if their model meets systemic risk conditions.",
+        "domain": "provider",
+        "range": "AI Office",
+        "source": "Generated"
+    },
+    "62": {
+        "label": "drawsUpDocumentationFor",
+        "description": "Providers draw up technical documentation for their general-purpose AI models.",
+        "domain": "provider",
+        "range": "general-purpose AI model",
+        "source": "Generated"
+    },
+    "63": {
+        "label": "providesDocumentationTo",
+        "description": "Providers provide technical documentation for general-purpose AI models to the AI Office upon request.",
+        "domain": "provider",
+        "range": "AI Office",
+        "source": "Generated"
+    },
+    "64": {
+        "label": "providesDocumentationTo",
+        "description": "Providers provide technical documentation for general-purpose AI models to national competent authorities upon request.",
+        "domain": "provider",
+        "range": "national competent authority",
+        "source": "Generated"
+    },
+    "65": {
+        "label": "providesInformationTo",
+        "description": "Providers of general-purpose AI models make information available to downstream providers for integration.",
+        "domain": "provider",
+        "range": "downstream provider",
+        "source": "Generated"
+    },
+    "66": {
+        "label": "has",
+        "description": "Providers of general-purpose AI models have an obligation to implement a policy for compliance with Union copyright law.",
+        "domain": "provider",
+        "range": "Copyright Compliance Obligation (AI Model Provider)",
+        "source": "Generated"
+    },
+    "67": {
+        "label": "makesAvailableSummaryOf",
+        "description": "Providers of general-purpose AI models make a sufficiently detailed summary about the content used for training publicly available.",
+        "domain": "provider",
+        "range": "training data",
+        "source": "Generated"
+    },
+    "68": {
+        "label": "evaluates",
+        "description": "Providers of systemic risk general-purpose AI models perform model evaluations to identify and mitigate systemic risks.",
+        "domain": "provider",
+        "range": "Systemic Risk General-Purpose AI Model",
+        "source": "Generated"
+    },
+    "69": {
+        "label": "mitigates",
+        "description": "Providers of systemic risk general-purpose AI models assess and mitigate possible systemic risks.",
+        "domain": "provider",
+        "range": "systemic risk",
+        "source": "Generated"
+    },
+    "70": {
+        "label": "reports",
+        "description": "Providers of systemic risk general-purpose AI models report relevant information about serious incidents.",
+        "domain": "provider",
+        "range": "serious incident",
+        "source": "Generated"
+    },
+    "71": {
+        "label": "ensuresCybersecurityFor",
+        "description": "Providers ensure an adequate level of cybersecurity protection for systemic risk general-purpose AI models.",
+        "domain": "provider",
+        "range": "Systemic Risk General-Purpose AI Model",
+        "source": "Generated"
+    },
+    "72": {
+        "label": "conducts",
+        "description": "Providers may conduct testing of high-risk AI systems in real-world conditions.",
+        "domain": "provider",
+        "range": "testing in real-world conditions",
+        "source": "Generated"
+    },
+    "73": {
+        "label": "submits",
+        "description": "Providers submit a real-world testing plan to the market surveillance authority.",
+        "domain": "provider",
+        "range": "real-world testing plan",
+        "source": "Generated"
+    },
+    "74": {
+        "label": "registers",
+        "description": "Providers register testing in real-world conditions in the EU database.",
+        "domain": "provider",
+        "range": "testing in real-world conditions",
+        "source": "Generated"
+    },
+    "75": {
+        "label": "cooperatesWith",
+        "description": "Providers cooperate with deployers when organizing testing in real-world conditions.",
+        "domain": "provider",
+        "range": "deployer",
+        "source": "Generated"
+    },
+    "76": {
+        "label": "isExemptFrom",
+        "description": "Providers participating in an AI regulatory sandbox under certain conditions are exempt from administrative fines for infringements of the Regulation.",
+        "domain": "provider",
+        "range": "Administrative Fine (Prohibited AI Practice)",
+        "source": "Generated"
+    },
+    "77": {
+        "label": "isExemptFrom",
+        "description": "Providers participating in an AI regulatory sandbox under certain conditions are exempt from administrative fines for infringements of the Regulation.",
+        "domain": "provider",
+        "range": "Administrative Fine (GPAI Provider)",
+        "source": "Generated"
+    },
+    "78": {
+        "label": "triggers",
+        "description": "Non-compliance with prohibited AI practices by a provider triggers administrative fines.",
+        "domain": "provider",
+        "range": "Administrative Fine (Prohibited AI Practice)",
+        "source": "Generated"
+    },
+    "79": {
+        "label": "triggers",
+        "description": "Non-compliance with obligations by a provider (other than prohibited practices) triggers administrative fines.",
+        "domain": "provider",
+        "range": "Administrative Fine (GPAI Provider)",
+        "source": "Generated"
+    },
+    "80": {
+        "label": "isSubjectTo",
+        "description": "Providers of general-purpose AI models are subject to administrative fines for non-compliance with their obligations.",
+        "domain": "provider",
+        "range": "Administrative Fine (GPAI Provider)",
+        "source": "Generated"
+    },
+    "81": {
+        "label": "failsToAffix",
+        "description": "A provider's failure to affix the CE marking leads to formal non-compliance.",
+        "domain": "provider",
+        "range": "CE marking",
+        "source": "Generated"
+    },
+    "82": {
+        "label": "failsToAppoint",
+        "description": "A provider's failure to appoint an authorised representative leads to formal non-compliance.",
+        "domain": "provider",
+        "range": "authorised representative",
+        "source": "Generated"
+    },
+    "83": {
+        "label": "uses",
+        "description": "A deployer uses an AI system under its authority.",
+        "domain": "deployer",
+        "range": "AI system",
+        "source": "Generated"
+    },
+    "84": {
+        "label": "reportsTo",
+        "description": "Deployers report serious incidents or risks related to AI systems to providers.",
+        "domain": "deployer",
+        "range": "provider",
+        "source": "Generated"
+    },
+    "85": {
+        "label": "informs",
+        "description": "Deployers inform market surveillance authorities of AI system risks or serious incidents.",
+        "domain": "deployer",
+        "range": "market surveillance authority",
+        "source": "Generated"
+    },
+    "86": {
+        "label": "informs",
+        "description": "Deployers inform importers of serious incidents related to AI systems.",
+        "domain": "deployer",
+        "range": "importer",
+        "source": "Generated"
+    },
+    "87": {
+        "label": "receives",
+        "description": "Deployers receive instructions for use for an AI system.",
+        "domain": "deployer",
+        "range": "instructions for use",
+        "source": "Generated"
+    },
+    "88": {
+        "label": "informs",
+        "description": "Deployers inform affected persons of AI system use in the workplace or in decision-making.",
+        "domain": "deployer",
+        "range": "Affected Person (AI System Use)",
+        "source": "Generated"
+    },
+    "89": {
+        "label": "informs",
+        "description": "Deployers inform distributors of unregistered AI systems.",
+        "domain": "deployer",
+        "range": "distributor",
+        "source": "Generated"
+    },
+    "90": {
+        "label": "requestsAuthorizationFrom",
+        "description": "Deployers of post-remote biometric identification systems request authorization from law enforcement authorities for system use.",
+        "domain": "deployer",
+        "range": "law enforcement authority",
+        "source": "Generated"
+    },
+    "91": {
+        "label": "submitsReportsTo",
+        "description": "Deployers submit annual reports on post-remote biometric identification system use to market surveillance authorities.",
+        "domain": "deployer",
+        "range": "market surveillance authority",
+        "source": "Generated"
+    },
+    "92": {
+        "label": "submitsReportsTo",
+        "description": "Deployers submit annual reports on post-remote biometric identification system use to national competent authorities.",
+        "domain": "deployer",
+        "range": "national competent authority",
+        "source": "Generated"
+    },
+    "93": {
+        "label": "performs",
+        "description": "Public service deployers perform a fundamental rights impact assessment for high-risk AI systems.",
+        "domain": "Public Service Deployer",
+        "range": "Fundamental Rights Impact Assessment",
+        "source": "Generated"
+    },
+    "94": {
+        "label": "notifies",
+        "description": "Deployers notify market surveillance authorities of fundamental rights impact assessment results.",
+        "domain": "deployer",
+        "range": "market surveillance authority",
+        "source": "Generated"
+    },
+    "95": {
+        "label": "represents",
+        "description": "An authorised representative represents a provider and acts on its behalf.",
+        "domain": "authorised representative",
+        "range": "provider",
+        "source": "Generated"
+    },
+    "96": {
+        "label": "actsForProviderOf",
+        "description": "An authorised representative acts on behalf of a provider of an AI system.",
+        "domain": "authorised representative",
+        "range": "AI system",
+        "source": "Generated"
+    },
+    "97": {
+        "label": "actsForProviderOf",
+        "description": "An authorised representative acts on behalf of a provider of a general-purpose AI model.",
+        "domain": "authorised representative",
+        "range": "general-purpose AI model",
+        "source": "Generated"
+    },
+    "98": {
+        "label": "verifies",
+        "description": "An authorised representative verifies that the provider has carried out the conformity assessment.",
+        "domain": "authorised representative",
+        "range": "conformity assessment",
+        "source": "Generated"
+    },
+    "99": {
+        "label": "keepsAtDisposalOf",
+        "description": "An authorised representative keeps documentation at the disposal of national competent authorities.",
+        "domain": "authorised representative",
+        "range": "national competent authority",
+        "source": "Generated"
+    },
+    "100": {
+        "label": "providesInformationTo",
+        "description": "An authorised representative provides information to national competent authorities for AI system conformity.",
+        "domain": "authorised representative",
+        "range": "national competent authority",
+        "source": "Generated"
+    },
+    "101": {
+        "label": "cooperatesWith",
+        "description": "An authorised representative cooperates with national competent authorities to mitigate AI system risks.",
+        "domain": "authorised representative",
+        "range": "national competent authority",
+        "source": "Generated"
+    },
+    "102": {
+        "label": "registers",
+        "description": "An authorised representative complies with registration obligations for AI systems in the EU database.",
+        "domain": "authorised representative",
+        "range": "AI system",
+        "source": "Generated"
+    },
+    "103": {
+        "label": "informs",
+        "description": "An authorised representative informs the market surveillance authority of mandate termination or AI system risks.",
+        "domain": "authorised representative",
+        "range": "market surveillance authority",
+        "source": "Generated"
+    },
+    "104": {
+        "label": "informs",
+        "description": "An authorised representative informs the notified body of mandate termination.",
+        "domain": "authorised representative",
+        "range": "notified body",
+        "source": "Generated"
+    },
+    "105": {
+        "label": "keepsAtDisposalOf",
+        "description": "An authorised representative keeps documentation for general-purpose AI models at the disposal of the AI Office.",
+        "domain": "authorised representative",
+        "range": "AI Office",
+        "source": "Generated"
+    },
+    "106": {
+        "label": "providesInformationTo",
+        "description": "An authorised representative provides information to the AI Office for general-purpose AI model compliance.",
+        "domain": "authorised representative",
+        "range": "AI Office",
+        "source": "Generated"
+    },
+    "107": {
+        "label": "cooperatesWith",
+        "description": "An authorised representative cooperates with the AI Office for general-purpose AI model compliance.",
+        "domain": "authorised representative",
+        "range": "AI Office",
+        "source": "Generated"
+    },
+    "108": {
+        "label": "informs",
+        "description": "An authorised representative informs the AI Office of mandate termination.",
+        "domain": "authorised representative",
+        "range": "AI Office",
+        "source": "Generated"
+    },
+    "109": {
+        "label": "placesOnTheMarket",
+        "description": "An importer places an AI system on the market.",
+        "domain": "importer",
+        "range": "AI system",
+        "source": "Generated"
+    },
+    "110": {
+        "label": "verifies",
+        "description": "Importers verify that the provider has carried out the conformity assessment for the AI system.",
+        "domain": "importer",
+        "range": "conformity assessment",
+        "source": "Generated"
+    },
+    "111": {
+        "label": "verifies",
+        "description": "Importers verify that the provider has appointed an authorised representative.",
+        "domain": "importer",
+        "range": "provider",
+        "source": "Generated"
+    },
+    "112": {
+        "label": "informs",
+        "description": "Importers inform providers of AI system risks or non-conformity.",
+        "domain": "importer",
+        "range": "provider",
+        "source": "Generated"
+    },
+    "113": {
+        "label": "informs",
+        "description": "Importers inform authorised representatives of AI system risks or non-conformity.",
+        "domain": "importer",
+        "range": "authorised representative",
+        "source": "Generated"
+    },
+    "114": {
+        "label": "informs",
+        "description": "Importers inform market surveillance authorities of AI system risks or non-conformity.",
+        "domain": "importer",
+        "range": "market surveillance authority",
+        "source": "Generated"
+    },
+    "115": {
+        "label": "labels",
+        "description": "Importers label AI systems with their identification.",
+        "domain": "importer",
+        "range": "AI system",
+        "source": "Generated"
+    },
+    "116": {
+        "label": "ensuresComplianceOf",
+        "description": "Importers ensure AI system compliance during storage or transport.",
+        "domain": "importer",
+        "range": "AI system",
+        "source": "Generated"
+    },
+    "117": {
+        "label": "keeps",
+        "description": "Importers keep instructions for use for AI systems.",
+        "domain": "importer",
+        "range": "instructions for use",
+        "source": "Generated"
+    },
+    "118": {
+        "label": "providesInformationTo",
+        "description": "Importers provide information to national competent authorities for AI system conformity.",
+        "domain": "importer",
+        "range": "national competent authority",
+        "source": "Generated"
+    },
+    "119": {
+        "label": "cooperatesWith",
+        "description": "Importers cooperate with national competent authorities to mitigate AI system risks.",
+        "domain": "importer",
+        "range": "national competent authority",
+        "source": "Generated"
+    },
+    "120": {
+        "label": "makesAvailableOnTheMarket",
+        "description": "A distributor makes an AI system available on the market.",
+        "domain": "distributor",
+        "range": "AI system",
+        "source": "Generated"
+    },
+    "121": {
+        "label": "verifies",
+        "description": "Distributors verify that the AI system bears the required CE marking.",
+        "domain": "distributor",
+        "range": "CE marking",
+        "source": "Generated"
+    },
+    "122": {
+        "label": "verifies",
+        "description": "Distributors verify that the AI system is accompanied by instructions for use.",
+        "domain": "distributor",
+        "range": "instructions for use",
+        "source": "Generated"
+    },
+    "123": {
+        "label": "verifiesComplianceOf",
+        "description": "Distributors verify that the provider has complied with their obligations.",
+        "domain": "distributor",
+        "range": "provider",
+        "source": "Generated"
+    },
+    "124": {
+        "label": "verifiesComplianceOf",
+        "description": "Distributors verify that the importer has complied with their obligations.",
+        "domain": "distributor",
+        "range": "importer",
+        "source": "Generated"
+    },
+    "125": {
+        "label": "informs",
+        "description": "Distributors inform providers of AI system risks or non-conformity.",
+        "domain": "distributor",
+        "range": "provider",
+        "source": "Generated"
+    },
+    "126": {
+        "label": "informs",
+        "description": "Distributors inform importers of AI system risks or non-conformity.",
+        "domain": "distributor",
+        "range": "importer",
+        "source": "Generated"
+    },
+    "127": {
+        "label": "ensuresComplianceOf",
+        "description": "Distributors ensure AI system compliance during storage or transport.",
+        "domain": "distributor",
+        "range": "AI system",
+        "source": "Generated"
+    },
+    "128": {
+        "label": "takesCorrectiveActionsFor",
+        "description": "Distributors take corrective actions for non-compliant AI systems.",
+        "domain": "distributor",
+        "range": "AI system",
+        "source": "Generated"
+    },
+    "129": {
+        "label": "informs",
+        "description": "Distributors inform national competent authorities of AI system risks or non-conformity.",
+        "domain": "distributor",
+        "range": "national competent authority",
+        "source": "Generated"
+    },
+    "130": {
+        "label": "providesInformationTo",
+        "description": "Distributors provide information to national competent authorities for AI system conformity.",
+        "domain": "distributor",
+        "range": "national competent authority",
+        "source": "Generated"
+    },
+    "131": {
+        "label": "cooperatesWith",
+        "description": "Distributors cooperate with national competent authorities to mitigate AI system risks.",
+        "domain": "distributor",
+        "range": "national competent authority",
+        "source": "Generated"
+    },
+    "132": {
+        "label": "assumesObligationsOf",
+        "description": "A deemed provider assumes the full obligations of a provider.",
+        "domain": "Deemed Provider",
+        "range": "provider",
+        "source": "Generated"
+    },
+    "133": {
+        "label": "putsNameOrTrademarkOn",
+        "description": "A deemed provider puts its name or trademark on an AI system, thereby assuming provider obligations.",
+        "domain": "Deemed Provider",
+        "range": "AI system",
+        "source": "Generated"
+    },
+    "134": {
+        "label": "makes",
+        "description": "A deemed provider makes a substantial modification to an AI system.",
+        "domain": "Deemed Provider",
+        "range": "substantial modification",
+        "source": "Generated"
+    },
+    "135": {
+        "label": "modifies",
+        "description": "A deemed provider modifies the intended purpose of an AI system.",
+        "domain": "Deemed Provider",
+        "range": "intended purpose",
+        "source": "Generated"
+    },
+    "136": {
+        "label": "supplies",
+        "description": "An AI component supplier supplies tools, services, components, or processes for an AI system.",
+        "domain": "AI Component Supplier",
+        "range": "AI system",
+        "source": "Generated"
+    },
+    "137": {
+        "label": "performs",
+        "description": "Public service deployers perform a fundamental rights impact assessment for high-risk AI systems.",
+        "domain": "Public Service Deployer",
+        "range": "Fundamental Rights Impact Assessment",
+        "source": "Generated"
+    },
+    "138": {
+        "label": "has",
+        "description": "An affected person has the right to obtain explanations regarding decisions based on high-risk AI systems.",
+        "domain": "Affected Person (AI System Use)",
+        "range": "Right to AI Explanation",
+        "source": "Generated"
+    },
+    "139": {
+        "label": "gives",
+        "description": "Subjects of real-world testing give informed consent.",
+        "domain": "subject",
+        "range": "Real-World Testing Consent (Subject)",
+        "source": "Generated"
+    },
+    "140": {
+        "label": "forParticipationIn",
+        "description": "Real-world testing consent is given for participation in testing in real-world conditions.",
+        "domain": "Real-World Testing Consent (Subject)",
+        "range": "testing in real-world conditions",
+        "source": "Generated"
+    },
+    "141": {
+        "label": "isA",
+        "description": "Real-world testing consent is a specific type of informed consent.",
+        "domain": "Real-World Testing Consent (Subject)",
+        "range": "informed consent",
+        "source": "Generated"
+    },
+    "142": {
+        "label": "appliesTo",
+        "description": "Notified bodies must maintain independence from providers and other operators with economic interest.",
+        "domain": "Notified Body Independence Status",
+        "range": "notified body",
+        "source": "Generated"
+    },
+    "143": {
+        "label": "isIndependentOf",
+        "description": "Notified bodies are independent of the provider of an AI system they assess.",
+        "domain": "notified body",
+        "range": "provider",
+        "source": "Generated"
+    },
+    "144": {
+        "label": "isIndependentOf",
+        "description": "Notified bodies are independent of any other operator having an economic interest in assessed AI systems.",
+        "domain": "notified body",
+        "range": "operator",
+        "source": "Generated"
+    },
+    "145": {
+        "label": "notInvolvedIn",
+        "description": "Notified bodies and their personnel are not directly involved in the design, development, marketing, or use of high-risk AI systems.",
+        "domain": "notified body",
+        "range": "AI system",
+        "source": "Generated"
+    },
+    "146": {
+        "label": "submitsApplicationTo",
+        "description": "Conformity assessment bodies submit applications for notification to the notifying authority.",
+        "domain": "conformity assessment body",
+        "range": "notifying authority",
+        "source": "Generated"
+    },
+    "147": {
+        "label": "achieves",
+        "description": "A conformity assessment body demonstrates conformity with harmonised standards to achieve this status.",
+        "domain": "conformity assessment body",
+        "range": "Presumption of Conformity Status",
+        "source": "Generated"
+    },
+    "148": {
+        "label": "basedOnConformityWith",
+        "description": "Presumption of conformity is based on conformity with harmonised standards.",
+        "domain": "Presumption of Conformity Status",
+        "range": "harmonised standard",
+        "source": "Generated"
+    },
+    "149": {
+        "label": "basedOnConformityWith",
+        "description": "Presumption of conformity is based on conformity with common specifications.",
+        "domain": "Presumption of Conformity Status",
+        "range": "common specification",
+        "source": "Generated"
+    },
+    "150": {
+        "label": "appliesTo",
+        "description": "An AI system can achieve presumption of conformity by meeting certain criteria.",
+        "domain": "Presumption of Conformity Status",
+        "range": "AI system",
+        "source": "Generated"
+    },
+    "151": {
+        "label": "appliesTo",
+        "description": "A general-purpose AI model can achieve presumption of conformity by meeting certain criteria.",
+        "domain": "Presumption of Conformity Status",
+        "range": "general-purpose AI model",
+        "source": "Generated"
+    },
+    "152": {
+        "label": "evaluates",
+        "description": "Market surveillance authorities evaluate AI systems presenting a risk.",
+        "domain": "market surveillance authority",
+        "range": "AI system",
+        "source": "Generated"
+    },
+    "153": {
+        "label": "requiresCorrectiveActionFrom",
+        "description": "Market surveillance authorities require operators to take corrective actions for non-compliant AI systems.",
+        "domain": "market surveillance authority",
+        "range": "operator",
+        "source": "Generated"
+    },
+    "154": {
+        "label": "requires",
+        "description": "Market surveillance authorities require the withdrawal of non-compliant AI systems.",
+        "domain": "market surveillance authority",
+        "range": "withdrawal of an AI system",
+        "source": "Generated"
+    },
+    "155": {
+        "label": "requires",
+        "description": "Market surveillance authorities require the recall of non-compliant AI systems.",
+        "domain": "market surveillance authority",
+        "range": "recall of an AI system",
+        "source": "Generated"
+    },
+    "156": {
+        "label": "prohibitsAvailabilityOf",
+        "description": "Market surveillance authorities can prohibit or restrict an AI system from being made available on its national market or put into service.",
+        "domain": "market surveillance authority",
+        "range": "AI system",
+        "source": "Generated"
+    },
+    "157": {
+        "label": "withdraws",
+        "description": "Market surveillance authorities can withdraw an AI system from the market.",
+        "domain": "market surveillance authority",
+        "range": "AI system",
+        "source": "Generated"
+    },
+    "158": {
+        "label": "recalls",
+        "description": "Market surveillance authorities can recall an AI system.",
+        "domain": "market surveillance authority",
+        "range": "AI system",
+        "source": "Generated"
+    },
+    "159": {
+        "label": "evaluatesClassificationOf",
+        "description": "Market surveillance authorities evaluate the classification of AI systems by providers (e.g., as non-high-risk).",
+        "domain": "market surveillance authority",
+        "range": "AI system",
+        "source": "Generated"
+    },
+    "160": {
+        "label": "requiresCorrectiveActionFrom",
+        "description": "Market surveillance authorities require providers to take corrective actions for misclassified AI systems.",
+        "domain": "market surveillance authority",
+        "range": "provider",
+        "source": "Generated"
+    },
+    "161": {
+        "label": "requiresMeasuresFrom",
+        "description": "Market surveillance authorities require operators to take measures for compliant AI systems that still present a risk.",
+        "domain": "market surveillance authority",
+        "range": "operator",
+        "source": "Generated"
+    },
+    "162": {
+        "label": "grants",
+        "description": "Market surveillance authorities may authorise derogations for placing or putting into service specific high-risk AI systems for public interest reasons.",
+        "domain": "market surveillance authority",
+        "range": "Authorised Derogation (Public Interest)",
+        "source": "Generated"
+    },
+    "163": {
+        "label": "approves",
+        "description": "Market surveillance authorities approve testing in real-world conditions.",
+        "domain": "market surveillance authority",
+        "range": "testing in real-world conditions",
+        "source": "Generated"
+    },
+    "164": {
+        "label": "approves",
+        "description": "Market surveillance authorities approve real-world testing plans.",
+        "domain": "market surveillance authority",
+        "range": "real-world testing plan",
+        "source": "Generated"
+    },
+    "165": {
+        "label": "supervises",
+        "description": "Market surveillance authorities supervise testing in real-world conditions.",
+        "domain": "market surveillance authority",
+        "range": "testing in real-world conditions",
+        "source": "Generated"
+    },
+    "166": {
+        "label": "suspends",
+        "description": "Market surveillance authorities can suspend testing in real-world conditions.",
+        "domain": "market surveillance authority",
+        "range": "testing in real-world conditions",
+        "source": "Generated"
+    },
+    "167": {
+        "label": "terminates",
+        "description": "Market surveillance authorities can terminate testing in real-world conditions.",
+        "domain": "market surveillance authority",
+        "range": "testing in real-world conditions",
+        "source": "Generated"
+    },
+    "168": {
+        "label": "requiresModificationFrom",
+        "description": "Market surveillance authorities can require providers to modify aspects of testing in real-world conditions.",
+        "domain": "market surveillance authority",
+        "range": "provider",
+        "source": "Generated"
+    },
+    "169": {
+        "label": "requiresModificationFrom",
+        "description": "Market surveillance authorities can require deployers to modify aspects of testing in real-world conditions.",
+        "domain": "market surveillance authority",
+        "range": "deployer",
+        "source": "Generated"
+    },
+    "170": {
+        "label": "organizesTestingFor",
+        "description": "Market surveillance authorities organize testing of AI systems at the request of fundamental rights authorities.",
+        "domain": "market surveillance authority",
+        "range": "AI system",
+        "source": "Generated"
+    },
+    "171": {
+        "label": "grantedAccessBy",
+        "description": "Market surveillance authorities are granted access to data and documentation by providers for compliance assessment.",
+        "domain": "market surveillance authority",
+        "range": "provider",
+        "source": "Generated"
+    },
+    "172": {
+        "label": "supervises",
+        "description": "Market surveillance authorities supervise AI systems used by financial institutions.",
+        "domain": "market surveillance authority",
+        "range": "AI system",
+        "source": "Generated"
+    },
+    "173": {
+        "label": "isDesignatedFor",
+        "description": "Market surveillance authorities are designated for AI systems used for law enforcement, border management, and justice.",
+        "domain": "market surveillance authority",
+        "range": "AI system",
+        "source": "Generated"
+    },
+    "174": {
+        "label": "proposesJointActivitiesWith",
+        "description": "Market surveillance authorities propose joint activities with the AI Office for compliance, identification of non-compliance, awareness, or guidance.",
+        "domain": "market surveillance authority",
+        "range": "AI Office",
+        "source": "Generated"
+    },
+    "175": {
+        "label": "requestsInformationFrom",
+        "description": "Market surveillance authorities may request information from the AI Office regarding general-purpose AI models for AI system investigation.",
+        "domain": "market surveillance authority",
+        "range": "AI Office",
+        "source": "Generated"
+    },
+    "176": {
+        "label": "monitors",
+        "description": "The AI Office monitors AI systems.",
+        "domain": "AI Office",
+        "range": "AI system",
+        "source": "Generated"
+    },
+    "177": {
+        "label": "supervises",
+        "description": "The AI Office supervises AI systems.",
+        "domain": "AI Office",
+        "range": "AI system",
+        "source": "Generated"
+    },
+    "178": {
+        "label": "monitors",
+        "description": "The AI Office monitors general-purpose AI models.",
+        "domain": "AI Office",
+        "range": "general-purpose AI model",
+        "source": "Generated"
+    },
+    "179": {
+        "label": "supervises",
+        "description": "The AI Office supervises general-purpose AI models.",
+        "domain": "AI Office",
+        "range": "general-purpose AI model",
+        "source": "Generated"
+    },
+    "180": {
+        "label": "developsToolFor",
+        "description": "The AI Office develops tools to facilitate deployers' compliance with obligations.",
+        "domain": "AI Office",
+        "range": "deployer",
+        "source": "Generated"
+    },
+    "181": {
+        "label": "providesTemplateFor",
+        "description": "The AI Office provides templates for summaries of training data for general-purpose AI models.",
+        "domain": "AI Office",
+        "range": "training data",
+        "source": "Generated"
+    },
+    "182": {
+        "label": "providesSupportFor",
+        "description": "The AI Office provides coordination support for joint investigations by market surveillance authorities.",
+        "domain": "AI Office",
+        "range": null,
+        "source": "Generated"
+    },
+    "183": {
+        "label": "conductsEvaluationsOf",
+        "description": "The AI Office conducts evaluations of general-purpose AI models to assess compliance.",
+        "domain": "AI Office",
+        "range": "general-purpose AI model",
+        "source": "Generated"
+    },
+    "184": {
+        "label": "investigates",
+        "description": "The AI Office investigates systemic risks in systemic risk general-purpose AI models.",
+        "domain": "AI Office",
+        "range": "systemic risk",
+        "source": "Generated"
+    },
+    "185": {
+        "label": "requestsAccessTo",
+        "description": "The AI Office requests access to general-purpose AI models for evaluation purposes.",
+        "domain": "AI Office",
+        "range": "general-purpose AI model",
+        "source": "Generated"
+    },
+    "186": {
+        "label": "requestsMeasuresFrom",
+        "description": "The AI Office requests providers to take measures for compliance or risk mitigation.",
+        "domain": "AI Office",
+        "range": "provider",
+        "source": "Generated"
+    },
+    "187": {
+        "label": "requests",
+        "description": "The AI Office can request the withdrawal of AI systems based on general-purpose AI models.",
+        "domain": "AI Office",
+        "range": "withdrawal of an AI system",
+        "source": "Generated"
+    },
+    "188": {
+        "label": "requests",
+        "description": "The AI Office can request the recall of AI systems based on general-purpose AI models.",
+        "domain": "AI Office",
+        "range": "recall of an AI system",
+        "source": "Generated"
+    },
+    "189": {
+        "label": "alerts",
+        "description": "The scientific panel may provide a qualified alert to the AI Office regarding possible systemic risks.",
+        "domain": "AI Scientific Panel Expert",
+        "range": "AI Office",
+        "source": "Generated"
+    },
+    "190": {
+        "label": "advisesOnClassificationOf",
+        "description": "The scientific panel provides advice on the classification of systemic risk general-purpose AI models.",
+        "domain": "AI Scientific Panel Expert",
+        "range": "Systemic Risk General-Purpose AI Model",
+        "source": "Generated"
+    },
+    "191": {
+        "label": "isIndependentOf",
+        "description": "Experts on the scientific panel are independent of any provider of AI systems or general-purpose AI models.",
+        "domain": "AI Scientific Panel Expert",
+        "range": "provider",
+        "source": "Generated"
+    },
+    "192": {
+        "label": "carriedOutBy",
+        "description": "Law enforcement activities are carried out by law enforcement authorities or on their behalf.",
+        "domain": "law enforcement",
+        "range": "law enforcement authority",
+        "source": "Generated"
+    },
+    "193": {
+        "label": "isA",
+        "description": "Providers established in a third country whose AI system output is used in the Union are considered Union Market Operators (Third Country).",
+        "domain": "Union Market Operator (Third Country)",
+        "range": "provider",
+        "source": "Generated"
+    },
+    "194": {
+        "label": "isA",
+        "description": "Deployers established in a third country whose AI system output is used in the Union are considered Union Market Operators (Third Country).",
+        "domain": "Union Market Operator (Third Country)",
+        "range": "deployer",
+        "source": "Generated"
+    },
+    "195": {
+        "label": "uses",
+        "description": "Union Market Operators (Third Country) use AI systems where the output is used in the Union.",
+        "domain": "Union Market Operator (Third Country)",
+        "range": "AI system",
+        "source": "Generated"
+    },
+    "196": {
+        "label": "incurs",
+        "description": "Non-compliance with prohibited AI practices triggers administrative fines.",
+        "domain": "Prohibited AI Practice",
+        "range": "Administrative Fine (Prohibited AI Practice)",
+        "source": "Generated"
+    },
+    "197": {
+        "label": "imposedOn",
+        "description": "Administrative fines for general-purpose AI model providers are imposed on the provider.",
+        "domain": "Administrative Fine (GPAI Provider)",
+        "range": "provider",
+        "source": "Generated"
+    },
+    "198": {
+        "label": "assessesImpactOf",
+        "description": "A fundamental rights impact assessment evaluates the potential impact of a high-risk AI system on fundamental rights.",
+        "domain": "Fundamental Rights Impact Assessment",
+        "range": "AI system",
+        "source": "Generated"
+    },
+    "199": {
+        "label": "presents",
+        "description": "An AI system with a risk-presenting status presents risks to health, safety, or fundamental rights.",
+        "domain": "Risk-Presenting AI System Status",
+        "range": "risk",
+        "source": "Generated"
+    },
+    "200": {
+        "label": "obtainedFrom",
+        "description": "The right to AI explanation is obtained from the deployer.",
+        "domain": "Right to AI Explanation",
+        "range": "deployer",
+        "source": "Generated"
+    },
+    "201": {
+        "label": "concernsRoleOf",
+        "description": "The right to AI explanation concerns the role of an AI system in decision-making.",
+        "domain": "Right to AI Explanation",
+        "range": "AI system",
+        "source": "Generated"
+    },
+    "202": {
+        "label": "allowsProcessingOf",
+        "description": "The AI regulatory sandbox allows for the processing of personal data under specific conditions for AI system development.",
+        "domain": "AI Regulatory Sandbox Framework",
+        "range": "personal data",
+        "source": "Generated"
+    },
+    "203": {
+        "label": "facilitatesDevelopmentOf",
+        "description": "The AI regulatory sandbox facilitates the development, training, testing, and validation of AI systems.",
+        "domain": "AI Regulatory Sandbox Framework",
+        "range": "AI system",
+        "source": "Generated"
+    },
+    "204": {
+        "label": "isGovernedBy",
+        "description": "An AI regulatory sandbox operates pursuant to a specific sandbox plan.",
+        "domain": "AI Regulatory Sandbox Framework",
+        "range": "sandbox plan",
+        "source": "Generated"
+    },
+    "205": {
+        "label": "mayInclude",
+        "description": "AI regulatory sandboxes may include testing in real-world conditions.",
+        "domain": "AI Regulatory Sandbox Framework",
+        "range": "testing in real-world conditions",
+        "source": "Generated"
+    },
+    "206": {
+        "label": "providesPriorityAccessTo",
+        "description": "AI regulatory sandboxes provide priority access to SMEs (providers) that fulfil eligibility conditions.",
+        "domain": "AI Regulatory Sandbox Framework",
+        "range": "provider",
+        "source": "Generated"
+    },
+    "207": {
+        "label": "identifies",
+        "description": "Competent authorities identify risks within the AI regulatory sandbox.",
+        "domain": "AI Regulatory Sandbox Framework",
+        "range": "risk",
+        "source": "Generated"
+    },
+    "208": {
+        "label": "enablesEvaluationBy",
+        "description": "The post-market monitoring system enables the provider to evaluate continuous compliance of AI systems.",
+        "domain": "post-market monitoring system",
+        "range": "provider",
+        "source": "Generated"
+    },
+    "209": {
+        "label": "collectsDataFrom",
+        "description": "The post-market monitoring system collects data from deployers on AI system performance.",
+        "domain": "post-market monitoring system",
+        "range": "deployer",
+        "source": "Generated"
+    },
+    "210": {
+        "label": "monitorsUseOf",
+        "description": "The post-market monitoring system monitors the use of AI systems.",
+        "domain": "post-market monitoring system",
+        "range": "AI system",
+        "source": "Generated"
+    },
+    "211": {
+        "label": "designates",
+        "description": "The AI Office may designate a general-purpose AI model as presenting systemic risks.",
+        "domain": "AI Office",
+        "range": "Systemic Risk General-Purpose AI Model",
+        "source": "Generated"
+    }
+}
